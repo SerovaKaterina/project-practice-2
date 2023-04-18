@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1440px; 
+    margin: 0 auto; 
+    width: 100%; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+   } 
+   /* здесь ваши стили для десктопа (компьютер) */
+   @media (max-width: 1500px) { 
+    .footer { 
+    max-width: 800px; 
+    } 
+    /* здесь ваши стили для ноутбука */
+   } 
+   @media (max-width: 900px) { 
+    .footer { 
+    max-width: 600px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    } 
+    /* здесь ваши стили для планшета */
+   } 
+   @media (max-width: 640px) { 
+    .footer { 
+    max-width: 480px; 
+    padding-left: 16px; 
+    padding-right: 16px; 
+    } 
+    /* здесь ваши стили для смартфона */
+   }
