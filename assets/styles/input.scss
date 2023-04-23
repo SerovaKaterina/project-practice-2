@@ -1,0 +1,78 @@
+.contacts-block {
+  width: 1536px;
+  max-width: 100%;
+  display: grid;
+  grid-template-rows: 10% 20% 35% 35%;
+  grid-template-columns: 3% 42% 54%;
+  gap: 30px;
+  &__title {
+    max-width: 100%;
+
+    font-family: "Poiret One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    /*сокращённая форма записи для свойств grid-row-start , grid-column-start (en-US), grid-row-end (en-US) и grid-column-end (en-US*/
+    margin: 0%;
+    grid-area: 1/1/2/4;
+    text-align: center;
+  }
+  &__icon-1 {
+    margin-top: 3px;
+
+    grid-area: 2/1/3/2;
+  }
+  &__icon-2 {
+    margin: 0%;
+
+    grid-area: 3/1/4/2;
+  }
+  &__icon-3 {
+    margin: 0%;
+
+    grid-area: 4/1/5/2;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  &__social-media-1 {
+    height: 64px;
+    margin: 0%;
+
+    grid-area: 2/2/3/3;
+  }
+  &__social-media-2 {
+    margin: 0%;
+
+    grid-area: 3/2/4/3;
+  }
+  &__social-media-3 {
+    margin: 0%;
+
+    grid-area: 4/2/5/3;
+  }
+  &__map {
+    height: 100%;
+    max-width: 100%;
+    grid-area: 2/3/5/4;
+  }
+  #map {
+    border-radius: 30px;
+  }
+  &__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+
+    margin: 0%;
+  }
+  &__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration-line: underline;
+
+    row-gap: 11px;
+  }
+}
