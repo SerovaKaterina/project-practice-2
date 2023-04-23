@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/** Отзывы **/
+.carousel-control-prev-icon {
+    background-image: url(../images/arrow-left.svg);
+    width: 30px;
+    height: 20px;
+    margin-right: 20em;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../images/arrow-right.svg);
+    width: 30px;
+    height: 20px;
+    margin-left: 20em;
+}
+
+.carousel-inner::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.feedbacks-text {
+    display: flex;
+    justify-content: center;
+}
+.feedbacks-text__h2 {
+    font-family: "Poiret One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+/*# sourceMappingURL=style.css.map */

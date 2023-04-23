@@ -1,1 +1,38 @@
 /** Отзывы **/
+@mixin arrow-size {
+    width: 30px;
+    height: 20px;
+}
+
+@mixin fonti {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px
+}
+.carousel-control-prev-icon {
+    background-image: url(../images/arrow-left.svg);
+    @include arrow-size;
+    margin-right: 20em;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../images/arrow-right.svg);
+    @include arrow-size;
+    margin-left: 20em;
+}
+
+.carousel-inner::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.feedbacks-text {
+    display: flex;
+    justify-content: center;
+    &__h2 {
+        @include fonti;
+    }
+}
