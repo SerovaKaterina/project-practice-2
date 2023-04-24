@@ -9,21 +9,32 @@
     }
 
     &__menu-item {
+        font-family: 'Montserrat', Times, serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.5px;
         text-decoration: none;
         color: black;
-        margin-bottom: 0.8em;
+        margin-top: 0.8em;
     }
 
     &__menu-items2 {
         display: flex;
         flex-direction: row;
         list-style-type: none;
-        margin-left: -2em;
+        margin-left: -3.3em;
     }
 
     &__menu-item-img {
-        width: 2.5vw;
-        height: 2.5vh;
+        width: 3vw;
+        height: 3vh;
+    }
+
+    &__footer__info {
+        font-family: 'Montserrat', Times, serif;
+        font-weight: 200;
+        font-size: 8px;
+        line-height: 19.5px;
     }
    } 
    /* здесь ваши стили для десктопа (компьютер) */
