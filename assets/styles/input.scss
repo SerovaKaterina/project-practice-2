@@ -1,0 +1,23 @@
+$headerbgrcolor: #cbe4e6;
+
+.nav__header {
+    background-color: $headerbgrcolor;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    max-width: 120em;
+    display: flex;
+    height: 6em;
+    align-items: center;
+    align-self: center;
+
+    .nav__links-header {
+        display: flex;
+        width: 85%;
+        justify-content: space-around;
+        padding: 15px;
+        margin: auto;
+      }
+      
+      
+}
