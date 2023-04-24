@@ -282,7 +282,7 @@
     .presentation {
       width: 80%;
       margin: 0 auto 0 auto;
-      padding-top: 40px;
+      padding-top: 22px;
       padding-bottom: 10px;
     }
   
@@ -334,7 +334,7 @@
     }
   
     .btn__presentation-block {
-      padding-top: 50px;
+      padding-top: -15px;
     }
   }
   
@@ -376,7 +376,7 @@
     }
   
     .btn__presentation-block {
-      padding-top: 50px;
+      padding-top: -15px;
     }
   
     .btn__presentation-block {
