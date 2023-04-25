@@ -20,6 +20,7 @@
 
     &__menu-items2 {
         margin-top: 1em;
+        margin-left: 2.5em;
     }
 
     &__menu-item-img1 {
@@ -40,6 +41,7 @@
         line-height: 19.5px;
         margin-left: 3.8em;
     }
+
    } 
    /* здесь ваши стили для десктопа (компьютер) */
    @media (max-width: 1500px) { 
@@ -57,10 +59,30 @@
     /* здесь ваши стили для планшета */
    } 
    @media (max-width: 640px) { 
+    
     .footer { 
     max-width: 480px; 
     padding-left: 16px; 
-    padding-right: 16px; 
+    padding-right: 16px;
+
+    &__menu-item {
+        font-family: 'Montserrat', Times, serif;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 19.5px;
+        text-decoration: none;
+        color: black;
+        margin-top: 0.8em;
+    }
+
+    &__menu-info {
+        font-family: 'Montserrat', Times, serif;
+        font-weight: 200;
+        font-size: 8px;
+        line-height: 19.5px;
+        margin-left: 3.8em;
+    }
+
     } 
     /* здесь ваши стили для смартфона */
    }
