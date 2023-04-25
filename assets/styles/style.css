@@ -390,11 +390,11 @@ a {
 }
 
 .art__li:hover {
-  border-color: #4a94e9;
+  border-color: #36bfc9;
 }
 
 .art__h:hover {
-  color: #4a94e9;
+  color: #36bfc9;
 }
 
 @media screen and (max-width: 1399px) {
