@@ -6,99 +6,128 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/styles/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poiret+One&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles/style.css" />
   <title>Олеся Нам</title>
 </head>
 
 <body>
-  <section class="i_work_with">
-    <h2>С какими запросами я работаю</h2>
+  <section id="requests" class="container i_work_with">
+    <div class="container">
+      <h2>С какими запросами я работаю</h2>
 
-    <div class="self">
-      <div class="ellipse_blue"></div>
-      <h3>Отношения с собой</h3>
-      <ul>
-        <li>самооценка и самопринятие</li>
-        <li>личные границы</li>
-        <li>желание лучше узнать себя</li>
-        <li>поиск своего признания</li>
-        <li>смыслы и ценности</li>
-      </ul>
+      <div class="cards">
+        <div class="card self">
+          <svg class="ellipse_blue" width="54" height="54" viewBox="0 0 54 54" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="27" cy="26.5" rx="27" ry="26.5" fill="#CBE5E7" />
+          </svg>
+          <h3>Отношения с собой</h3>
+          <ul class="list">
+            <li>самооценка и самопринятие</li>
+            <li>личные границы</li>
+            <li>желание лучше узнать себя</li>
+            <li>поиск своего признания</li>
+            <li>смыслы и ценности</li>
+          </ul>
+        </div>
+
+        <div class="card partner">
+          <svg class="ellipse_blue" width="54" height="54" viewBox="0 0 54 54" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="27" cy="26.5" rx="27" ry="26.5" fill="#CBE5E7" />
+          </svg>
+          <h3>Отношения с парнером</h3>
+          <ul class="list">
+            <li>поиск партнера</li>
+            <li>конфликты в паре</li>
+            <li>зависимость от партнера</li>
+            <li>трудности в создании близких отношений</li>
+            <li>выйти из тяжелых отношений</li>
+            <li>ревность</li>
+            <li>измена</li>
+            <li>сексуальные проблемы и вопросы </li>
+            <li>расставание, развод</li>
+          </ul>
+
+        </div>
+        <div class="card family">
+          <svg class="ellipse_blue" width="54" height="54" viewBox="0 0 54 54" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="27" cy="26.5" rx="27" ry="26.5" fill="#CBE5E7" />
+          </svg>
+          <h3>Семья и дети</h3>
+          <ul class="list">
+            <li>семейные отношения</li>
+            <li>детско-родительские отношения</li>
+            <li>беременность и роды</li>
+          </ul>
+        </div>
+
+        <div class="card hard-time">
+          <svg class="ellipse_blue" width="54" height="54" viewBox="0 0 54 54" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="27" cy="26.5" rx="27" ry="26.5" fill="#CBE5E7" />
+          </svg>
+          <h3>Сложный момент в жизни</h3>
+          <ul class="list">
+            <li>кризисы и внутренние конфликты</li>
+            <li>сложные решения</li>
+            <li>серьезные перемены в жизни</li>
+            <li>миграция</li>
+            <li>переезд</li>
+          </ul>
+        </div>
+
+        <div class="card emotions">
+          <svg class="ellipse_blue" width="54" height="54" viewBox="0 0 54 54" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="27" cy="26.5" rx="27" ry="26.5" fill="#CBE5E7" />
+          </svg>
+          <h3>Эмоциональные трудности</h3>
+          <ul class="list">
+            <li>эмоциональная нестабильность</li>
+            <li>гнев</li>
+            <li>агрессия</li>
+            <li>раздражительность</li>
+            <li>чувство вины и стыда</li>
+            <li>депрессия</li>
+            <li>сниженное настроение</li>
+            <li>подавленное состояние</li>
+            <li>апатия</li>
+            <li>нехватка сил</li>
+          </ul>
+        </div>
+
+        <div class="card work">
+          <svg class="ellipse_blue" width="54" height="54" viewBox="0 0 54 54" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="27" cy="26.5" rx="27" ry="26.5" fill="#CBE5E7" />
+          </svg>
+          <h3>Работа и личная эффективность</h3>
+          <ul class="list">
+            <li>синдром самозванца</li>
+            <li>баланс между жизнью и работой</li>
+            <li>отношения и конфликты на работе</li>
+            <li>прокрастинация и низкая продуктивность</li>
+            <li>отношения с деньгами</li>
+            <li>выгорание</li>
+            <li>стресс и напряжение</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>Если какого-то важного для вас пункта нет в списке, напишите мне и я расскажу, работаю ли я с Вашей темой.
+        </p>
+        <a href="#contacts">Задать вопрос</a>
+      </div>
+
     </div>
 
-    <div class="partner">
-      <div class="ellipse_blue"></div>
-      <h3>Отношения с парнером</h3>
-      <ul>
-        <li></li>
-        <li>поиск партнера</li>
-        <li>конфликты в паре</li>
-        <li>зависимость от партнера</li>
-        <li>трудности в создании близких отношений</li>
-        <li>выйти из тяжелых отношений</li>
-        <li>ревность</li>
-        <li>измена</li>
-        <li>сексуальные проблемы и вопросы </li>
-        <li>расставание, развод</li>
-      </ul>
-
-    </div>
-    <div class="family">
-      <div class="ellipse_blue"></div>
-      <h3>Семья и дети</h3>
-      <ul>
-        <li>семейные отношения</li>
-        <li>детско-родительские отношения</li>
-        <li>беременность и роды</li>
-      </ul>
-    </div>
-
-    <div class="hard-time">
-      <div class="ellipse_blue"></div>
-      <h3>Сложный момент в жизни</h3>
-      <ul>
-        <li>кризисы и внутренние конфликты</li>
-        <li>сложные решения</li>
-        <li>серьезные перемены в жизни</li>
-        <li>миграция</li>
-        <li>переезд</li>
-      </ul>
-    </div>
-
-    <div class="emotions">
-      <div class="ellipse_blue"></div>
-      <h3>Эмоциональные трудности</h3>
-      <ul>
-        <li>эмоциональная нестабильность</li>
-        <li>гнев</li>
-        <li>агрессия</li>
-        <li>раздражительность</li>
-        <li>чувство вины и стыда</li>
-        <li>депрессия</li>
-        <li>сниженное настроение</li>
-        <li>подавленное состояние</li>
-        <li>апатия</li>
-        <li>нехватка сил</li>
-      </ul>
-    </div>
-
-    <div class="work">
-      <div class="ellipse_blue"></div>
-      <h3>Работа и личная эффективность</h3>
-      <ul>
-        <li>синдром самозванца</li>
-        <li>баланс между жизнью и работой</li>
-        <li>отношения и конфликты на работе</li>
-        <li>прокрастинация и низкая продуктивность</li>
-        <li>отношения с деньгами</li>
-        <li>выгорание</li>
-        <li>стресс и напряжение</li>
-      </ul>
-    </div>
-    <div>
-      <p>Если какого-то важного для вас пункта нет в списке, напишите мне и я расскажу, работаю ли я с Вашей темой.</p>
-      <a href="#">Задать вопрос</a>
-    </div>
   </section>
 </body>
 
