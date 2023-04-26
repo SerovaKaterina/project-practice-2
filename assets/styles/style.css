@@ -161,7 +161,7 @@ a {
 .section-1st-block {
   max-width: 120em;
   height: 44em;
-  background-image: url(/assets/Images/Maskgroup.svg);
+  background-image: url(../Images/Maskgroup.svg);
   background-repeat: no-repeat;
   font-family: "Poiret One";
   font-weight: 600;
@@ -340,6 +340,182 @@ a {
     padding-right: 50px;
   }
 }
+/* блок С КАКИМИ ЗАПРОСАМИ Я РАБОТАЮ */
+.i_work_with .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+.i_work_with .container h2 {
+  grid-column: 1/4;
+  font-family: "Poiret One";
+  font-size: 40px;
+  line-height: 47px;
+}
+.i_work_with .container .cards {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.i_work_with .container .cards .card {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  margin: 1%;
+  position: relative;
+  display: grid;
+  margin-bottom: 10%;
+}
+.i_work_with .container .cards .card .ellipse_blue {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.i_work_with .container .cards .card h3 {
+  grid-column: 1/3;
+  margin-top: 5%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 5%;
+}
+.i_work_with .container .cards .card .list {
+  grid-column: 1/3;
+  margin-bottom: 15%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.i_work_with .container .question {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+.i_work_with .container .question a {
+  border: 2px solid #000000;
+  border-radius: 30px;
+  align-self: center;
+  padding: 3%;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (max-width: 1500px) {
+  .i_work_with .container {
+    max-width: 800px;
+  }
+  .i_work_with .container h2 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .i_work_with .container .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .i_work_with .container .cards .card h3 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .i_work_with .container .cards .card .list {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .i_work_with .container .question {
+    display: flex;
+    flex-direction: column;
+  }
+  .i_work_with .container .question p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .i_work_with .container .question a {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (max-width: 900px) {
+  .i_work_with .container {
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .i_work_with .container h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .i_work_with .container .cards .card {
+    grid-template-columns: 1fr 6fr;
+    margin: 0;
+    margin-left: 5%;
+    margin-bottom: 15%;
+  }
+  .i_work_with .container .cards .card h3 {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 8%;
+    margin-left: 13%;
+  }
+  .i_work_with .container .cards .card .ellipse_blue {
+    max-width: 35px;
+    top: 0;
+  }
+  .i_work_with .container .cards .card .list {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .i_work_with .container .cards .question {
+    display: flex;
+    flex-direction: column;
+  }
+  .i_work_with .container .cards .question p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .i_work_with .container .cards .question a {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (max-width: 640px) {
+  .i_work_with .container {
+    max-width: 480px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .i_work_with .container h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .i_work_with .container .cards {
+    grid-template-columns: 1fr;
+  }
+  .i_work_with .container .cards .card {
+    grid-template-columns: 1fr 5fr;
+    margin: 0;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .i_work_with .container .cards .card h3 {
+    margin-left: 0;
+    margin-top: 7%;
+  }
+}
 
 /** Отзывы **/
 .feedbacks {
@@ -472,6 +648,5 @@ a {
 .feedbacks-phone .carousel-control-prev {
   left: -3em;
 }
-
 
 /*# sourceMappingURL=style.css.map */
