@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 .contacts-block {
   max-width: 1440px;
   width: 100%;
@@ -7,11 +6,10 @@
   padding-left: 30px;
   padding-right: 30px;
   display: grid;
-  grid-template-rows: 10% 20% 35% 35%;
-  grid-template-columns: 3% 42% 54%;
-  gap: 30px;
+  grid-template-rows: 47px 112px 112px 112px;
+  grid-template-columns: 63px 600px 708px;
+  gap: 25px;
 }
-
 .contacts-block__title {
   max-width: 100%;
   font-family: "Poiret One";
@@ -22,50 +20,41 @@
   grid-area: 1/1/2/4;
   text-align: center;
 }
-
 .contacts-block__icon-1 {
   margin-top: 3px;
   grid-area: 2/1/3/2;
 }
-
 .contacts-block__icon-2 {
   margin: 0%;
   grid-area: 3/1/4/2;
 }
-
 .contacts-block__icon-3 {
   margin: 0%;
   grid-area: 4/1/5/2;
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .contacts-block__social-media-1 {
   height: 64px;
   margin: 0%;
   grid-area: 2/2/3/3;
 }
-
 .contacts-block__social-media-2 {
   margin: 0%;
   grid-area: 3/2/4/3;
 }
-
 .contacts-block__social-media-3 {
   margin: 0%;
   grid-area: 4/2/5/3;
 }
-
 .contacts-block__map {
-  max-width: 708px;
-  width: 100%;
+  width: 708px;
+  height: 334px;
   grid-area: 2/3/5/4;
 }
-
 .contacts-block #map {
   border-radius: 30px;
 }
-
 .contacts-block__text {
   font-family: "Montserrat";
   font-style: normal;
@@ -73,7 +62,6 @@
   font-size: 24px;
   margin: 0%;
 }
-
 .contacts-block__link {
   font-family: "Montserrat";
   font-style: normal;
@@ -90,32 +78,27 @@
     display: grid;
     grid-template-rows: 5% 20% 20% 20% 35%;
     grid-template-columns: 5% 95%;
-    gap: 50px;
+    column-gap: 40px;
   }
-
   .contacts-block__title {
     font-size: 32px;
     grid-area: 1/1/2/3;
   }
-
   .contacts-block__map {
     width: 800px;
+    height: 400px;
     margin: 0 auto;
     grid-row: 5/6;
     grid-column: 1/3;
   }
-
   .contacts-block__text {
     font-size: 20px;
   }
-
   .contacts-block__link {
     font-size: 16px;
   }
-
   /* здесь стили для ноутбука */
 }
-
 @media (max-width: 900px) {
   .contacts-block {
     max-width: 600px;
@@ -125,42 +108,35 @@
     display: grid;
     grid-template-rows: 5% 20% 20% 20% 35%;
     grid-template-columns: 5% 95%;
-    gap: 50px;
     /* здесь стили для планшета */
   }
-
   .contacts-block__title {
     font-size: 30px;
     grid-area: 1/1/2/3;
   }
-
   .contacts-block__icon-1 {
     height: 42px;
   }
-
   .contacts-block__icon-2 {
     height: 53px;
   }
-
   .contacts-block__icon-3 {
     height: 53px;
   }
-
   .contacts-block__map {
+    width: 480px;
+    height: 300px;
     margin: 0 auto;
     grid-row: 5/6;
     grid-column: 1/3;
   }
-
   .contacts-block__text {
     font-size: 18px;
   }
-
   .contacts-block__link {
     font-size: 14px;
   }
 }
-
 @media (max-width: 640px) {
   .contacts-block {
     max-width: 480px;
@@ -169,40 +145,34 @@
     padding-right: 16px;
     display: grid;
     grid-template-rows: 5% 20% 20% 20% 35%;
-    grid-template-columns: 5% 95%;
+    grid-template-columns: 5% 380px;
   }
-
   .contacts-block__title {
     font-size: 30px;
     grid-area: 1/1/2/3;
   }
-
   .contacts-block__icon-1 {
     height: 42px;
   }
-
   .contacts-block__icon-2 {
     height: 53px;
   }
-
   .contacts-block__icon-3 {
     height: 53px;
   }
-
   .contacts-block__map {
+    width: 450px;
+    height: 300px;
     margin: 0 auto;
     grid-row: 5/6;
     grid-column: 1/3;
   }
-
   .contacts-block__text {
     font-size: 18px;
   }
-
   .contacts-block__link {
     font-size: 14px;
   }
-
   /* здесь стили для смартфона */
 }
 
