@@ -603,3 +603,129 @@ a {
     }
 
 }
+/** Отзывы **/
+@mixin arrow-size {
+  width: 30px;
+  height: 20px;
+}
+
+@mixin fonti {
+  font-family: 'Poiret One', cursive;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.feedbacks {
+  max-width: 1440px; 
+  margin: 0 auto; 
+  padding-left: 30px; 
+  padding-right: 30px;
+
+  @media (max-width: 1500px) {
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  @media (max-width: 900px) { 
+      display: none;
+  }
+
+  @media (max-width: 640px) {
+      display: none;  
+      } 
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../images/arrow-left.svg);
+  @include arrow-size;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/arrow-right.svg);
+  @include arrow-size;
+}
+
+.carousel-control-prev {
+  left: -150px;
+  @media (max-width: 1500px) {
+      left: -100px;
+  }
+}
+
+.carousel-control-next {
+  right: -150px;
+  @media (max-width: 1500px) {
+      right: -100px;
+  }
+}
+
+.carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.feedbacks-text {
+  margin-bottom: 1.4em;
+  margin: 0 auto;
+  width: 6em;
+  &__h2 {
+      @include fonti;
+      @media (max-width: 1500px) {
+          font-size: 2em;
+      }
+      @media (max-width: 900px) {
+          font-size: 1.5em;
+      }
+      @media (max-width: 640px) {
+          font-size: 1.2em;
+      }
+  }
+}
+
+.feedbacks-tablet {
+  @media (min-width: 900px){
+      display: none;
+  }
+
+  @media (max-width: 639px) {
+      display: none;
+  }
+  @media (max-width: 900px) { 
+      max-width: 600px; 
+      margin: 0 auto;
+      padding-left: 20px; 
+      padding-right: 20px;
+
+      .carousel-control-next {
+          right: -3.5em;
+      }
+
+      .carousel-control-prev {
+          left: -3.5em;
+      }
+  } 
+}
+
+.feedbacks-phone {
+  @media (min-width: 640px) {
+      display: none;
+  }
+
+  @media (max-width: 640px) {
+      max-width: 480px; 
+      margin: 0 auto;
+      padding-left: 16px; 
+      padding-right: 16px;
+  }
+
+  .carousel-control-next {
+      right: -3em;
+  }
+
+  .carousel-control-prev {
+      left: -3em;
+  }
+}
+
