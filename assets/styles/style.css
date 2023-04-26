@@ -161,7 +161,7 @@ a {
 .section-1st-block {
   max-width: 120em;
   height: 44em;
-  background-image: url(/assets/Images/Maskgroup.svg);
+  background-image: url(assets/Images/Maskgroup.svg);
   background-repeat: no-repeat;
   font-family: "Poiret One";
   font-weight: 600;
