@@ -161,7 +161,7 @@ a {
 .section-1st-block {
   max-width: 120em;
   height: 44em;
-  background-image: url(assets/Images/Maskgroup.svg);
+  background-image: url(../Images/Maskgroup.svg);
   background-repeat: no-repeat;
   font-family: "Poiret One";
   font-weight: 600;
@@ -366,7 +366,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .i_work_with .container .cards .card {
-  background: #ffffff;
+  background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 30px;
   margin: 1%;
