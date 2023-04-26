@@ -1,344 +1,578 @@
 @charset "UTF-8";
+
 .nav__header {
-  max-width: 120em;
-  height: 6em;
-  background-color: #cbe4e6;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+    max-width: 120em;
+    height: 6em;
+    background-color: #cbe4e6;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .nav-bar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  max-width: 100em;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    max-width: 100em;
+    margin: 0 auto;
 }
 
 .nav-links {
-  list-style-type: none;
-  padding: 15px;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 20px;
-  font-family: "Poiret One";
-  color: rgb(0, 0, 0);
+    list-style-type: none;
+    padding: 15px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 20px;
+    font-family: "Poiret One";
+    color: rgb(0, 0, 0);
 }
 
 a {
-  text-decoration: none;
-  color: #111111;
+    text-decoration: none;
+    color: #111111;
 }
 
 .nav-links:hover {
-  color: #453a60;
-  text-decoration: underline;
+    color: #453a60;
+    text-decoration: underline;
 }
 
 /* меню бургер НАЧАЛО */
 /* скрываем чекбокс */
 #menu__toggle {
-  opacity: 0;
+    opacity: 0;
 }
 
 .hamburger-menu {
-  padding-left: 480px;
+    padding-left: 480px;
 }
 
 /* стилизуем кнопку */
 .menu__btn-header {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 40px;
-  width: 40px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 1;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    width: 40px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 /* добавляем "гамбургер" */
-.menu__btn-header > span,
-.menu__btn-header > span::before,
-.menu__btn-header > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #0b0b0b;
+.menu__btn-header>span,
+.menu__btn-header>span::before,
+.menu__btn-header>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0b0b0b;
 }
 
-.menu__btn-header > span::before {
-  content: "";
-  top: -8px;
+.menu__btn-header>span::before {
+    content: "";
+    top: -8px;
 }
 
-.menu__btn-header > span::after {
-  content: "";
-  top: 8px;
+.menu__btn-header>span::after {
+    content: "";
+    top: 8px;
 }
 
 /* контейнер меню */
 .menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  right: -100%;
-  width: 25em;
-  height: 430px;
-  margin-left: -35px;
-  padding: 15px;
-  list-style: none;
-  text-align: left;
-  background-color: #cde2e7;
-  box-shadow: 1px 0px 6px #dbcec0;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 25em;
+    height: 430px;
+    margin-left: -35px;
+    padding: 15px;
+    list-style: none;
+    text-align: left;
+    background-color: #cde2e7;
+    box-shadow: 1px 0px 6px #dbcec0;
 }
 
 /* элементы меню */
 .menu__item-burg,
 .menu__item-burg-2 {
-  display: block;
-  margin: 15px;
-  padding: 12px 24px;
-  color: #0b0b0b;
-  font-family: "Poiret One", sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: solid 0.05em #d7f0f3;
-  border-radius: 2em;
+    display: block;
+    margin: 15px;
+    padding: 12px 24px;
+    color: #0b0b0b;
+    font-family: "Poiret One", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 0.05em #d7f0f3;
+    border-radius: 2em;
 }
 
 .menu__item-burg:hover {
-  background-color: #dce3e0;
+    background-color: #dce3e0;
 }
 
 .menu__item-burg-2:hover {
-  background-color: #dce3e0;
+    background-color: #dce3e0;
 }
 
-#menu__toggle:checked ~ .menu__btn-header > span {
-  transform: rotate(45deg);
+#menu__toggle:checked~.menu__btn-header>span {
+    transform: rotate(45deg);
 }
 
-#menu__toggle:checked ~ .menu__btn-header > span::before {
-  top: 0;
-  transform: rotate(0);
+#menu__toggle:checked~.menu__btn-header>span::before {
+    top: 0;
+    transform: rotate(0);
 }
 
-#menu__toggle:checked ~ .menu__btn-header > span::after {
-  top: 0;
-  transform: rotate(90deg);
+#menu__toggle:checked~.menu__btn-header>span::after {
+    top: 0;
+    transform: rotate(90deg);
 }
 
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 100px;
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 100px;
 }
 
-.menu__btn-header > span,
-.menu__btn-header > span::before,
-.menu__btn-header > span::after {
-  transition-duration: 0.25s;
+.menu__btn-header>span,
+.menu__btn-header>span::before,
+.menu__btn-header>span::after {
+    transition-duration: 0.25s;
 }
 
 .menu__box {
-  transition-duration: 0.25s;
+    transition-duration: 0.25s;
 }
 
 .menu__item-burg,
 .menu__item-burg-2 {
-  transition-duration: 0.25s;
+    transition-duration: 0.25s;
 }
 
 /* меню бургер ОКОНЧАНИЕ */
 .section-1st-block {
-  max-width: 120em;
-  height: 44em;
-  background-image: url(/assets/Images/Maskgroup.svg);
-  background-repeat: no-repeat;
-  font-family: "Poiret One";
-  font-weight: 600;
+    max-width: 120em;
+    height: 44em;
+    background-image: url(/assets/Images/Maskgroup.svg);
+    background-repeat: no-repeat;
+    font-family: "Poiret One";
+    font-weight: 600;
 }
 
 /* Первый блок СОДЕРЖАНИЕ */
 .presentation {
-  display: flex;
-  flex-direction: column;
-  max-width: 63em;
-  margin-left: 120px;
-  padding: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 63em;
+    margin-left: 120px;
+    padding: 15px;
 }
 
 .presentation__name {
-  /* Имя */
-  font-size: 45px;
-  margin-top: 100px;
+    /* Имя */
+    font-size: 45px;
+    margin-top: 100px;
 }
 
 .presentation__profession {
-  display: flex;
-  flex-direction: row;
-  font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    font-size: 3em;
 }
 
 .presentation__profession-2 {
-  margin-left: 15px;
+    margin-left: 15px;
 }
 
 .presentation__quote {
-  /* Цитата */
-  font-size: 2em;
+    /* Цитата */
+    font-size: 2em;
 }
 
 .presentation__quote-author {
-  /* Автор */
-  font-size: 2em;
-  align-items: flex-end;
+    /* Автор */
+    font-size: 2em;
+    align-items: flex-end;
 }
 
 /* Положение кнопки первого блока */
 .btn__presentation-block {
-  display: flex;
-  max-width: 110em;
-  padding-right: 150px;
-  margin-bottom: 150px;
-  justify-content: flex-end;
+    display: flex;
+    max-width: 110em;
+    padding-right: 150px;
+    margin-bottom: 150px;
+    justify-content: flex-end;
 }
 
 /* Стили кнопки первого блока */
 .btn__presentation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0.12em 1em #b8e6e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.12em 1em #b8e6e9;
 }
 
 /* Стили кнопки ОБЩИЕ */
 .btn {
-  cursor: pointer;
-  border: 0.05em solid #111111;
-  border-radius: 1.1em;
-  background-color: transparent;
-  height: 2.2em;
-  width: 14em;
-  color: #1a1b1c;
-  font-size: 1.5em;
-  font-family: "Poiret One";
-  font-weight: 600;
+    cursor: pointer;
+    border: 0.05em solid #111111;
+    border-radius: 1.1em;
+    background-color: transparent;
+    height: 2.2em;
+    width: 14em;
+    color: #1a1b1c;
+    font-size: 1.5em;
+    font-family: "Poiret One";
+    font-weight: 600;
 }
 
 /* МЕДИАЗАПРОСЫ */
 @media (min-width: 1401px) {
-  .hamburger-menu {
-    display: none;
-  }
+    .hamburger-menu {
+        display: none;
+    }
 }
+
 @media (min-width: 901px) and (max-width: 1400px) {
-  .hamburger-menu {
-    display: none;
-  }
-  .nav__header {
-    max-width: 60em;
-  }
-  .nav-links {
-    font-size: 24px;
-  }
-  .section-1st-block {
-    max-width: 60em;
-    height: 700px;
-    background-image: url(/assets/Images/background1300.png);
-  }
-  .presentation {
-    width: 80%;
-    margin: 0 auto 0 auto;
-    padding-top: 22px;
-    padding-bottom: 10px;
-  }
-  .presentation__profession {
-    flex-direction: column;
-    font-size: 2.5em;
-  }
-  .presentation__profession-2 {
-    margin-left: 0;
-  }
-  .btn__presentation {
-    margin-top: 20px;
-  }
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav__header {
+        max-width: 60em;
+    }
+
+    .nav-links {
+        font-size: 24px;
+    }
+
+    .section-1st-block {
+        max-width: 60em;
+        height: 700px;
+        background-image: url(/assets/Images/background1300.png);
+    }
+
+    .presentation {
+        width: 80%;
+        margin: 0 auto 0 auto;
+        padding-top: 22px;
+        padding-bottom: 10px;
+    }
+
+    .presentation__profession {
+        flex-direction: column;
+        font-size: 2.5em;
+    }
+
+    .presentation__profession-2 {
+        margin-left: 0;
+    }
+
+    .btn__presentation {
+        margin-top: 20px;
+    }
 }
+
 @media (min-width: 641px) and (max-width: 900px) {
-  .nav__header {
-    max-width: 38em;
-  }
-  .nav-links {
-    display: none;
-  }
-  .section-1st-block {
-    width: 38em;
-    height: 700px;
-    background-image: url(/assets/Images/background600.png);
-    margin-top: -25px;
-  }
-  .presentation {
-    margin-left: 20px;
-  }
-  .presentation__name {
-    margin-top: 30px;
-    font-size: 80px;
-  }
-  .presentation__profession {
-    flex-direction: column;
-    font-size: 2.5em;
-  }
-  .presentation__profession-2 {
-    margin-left: 0;
-  }
-  .btn__presentation-block {
-    padding-top: -8px;
-  }
+    .nav__header {
+        max-width: 38em;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .section-1st-block {
+        width: 38em;
+        height: 700px;
+        background-image: url(/assets/Images/background600.png);
+        margin-top: -25px;
+    }
+
+    .presentation {
+        margin-left: 20px;
+    }
+
+    .presentation__name {
+        margin-top: 30px;
+        font-size: 80px;
+    }
+
+    .presentation__profession {
+        flex-direction: column;
+        font-size: 2.5em;
+    }
+
+    .presentation__profession-2 {
+        margin-left: 0;
+    }
+
+    .btn__presentation-block {
+        padding-top: -8px;
+    }
 }
+
 @media (max-width: 640px) {
-  .nav-links {
-    display: none;
-  }
-  .nav__header {
-    width: 30em;
-  }
-  .hamburger-menu {
-    padding-left: 350px;
-  }
-  .section-1st-block {
-    width: 30em;
-    height: 750px;
-    background-image: url(/assets/Images/background600.png);
-    margin-top: -25px;
-  }
-  .presentation {
-    margin-left: 15px;
-  }
-  .presentation__name {
-    margin-top: 20px;
-    font-size: 60px;
-  }
-  .presentation__profession {
-    flex-direction: column;
-    font-size: 2.5em;
-  }
-  .presentation__profession-2 {
-    margin-left: 0;
-  }
-  .btn__presentation-block {
-    padding-top: -8px;
-  }
-  .btn__presentation-block {
-    padding-right: 50px;
-  }
+    .nav-links {
+        display: none;
+    }
+
+    .nav__header {
+        width: 30em;
+    }
+
+    .hamburger-menu {
+        padding-left: 350px;
+    }
+
+    .section-1st-block {
+        width: 30em;
+        height: 750px;
+        background-image: url(/assets/Images/background600.png);
+        margin-top: -25px;
+    }
+
+    .presentation {
+        margin-left: 15px;
+    }
+
+    .presentation__name {
+        margin-top: 20px;
+        font-size: 60px;
+    }
+
+    .presentation__profession {
+        flex-direction: column;
+        font-size: 2.5em;
+    }
+
+    .presentation__profession-2 {
+        margin-left: 0;
+    }
+
+    .btn__presentation-block {
+        padding-top: -8px;
+    }
+
+    .btn__presentation-block {
+        padding-right: 50px;
+    }
+}
+
+/* блок С КАКИМИ ЗАПРОСАМИ Я РАБОТАЮ */
+.i_work_with .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.i_work_with .container h2 {
+    grid-column: 1/4;
+    font-family: "Poiret One";
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.i_work_with .container .cards {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.i_work_with .container .cards .card {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    margin: 1%;
+    position: relative;
+    display: grid;
+    margin-bottom: 10%;
+}
+
+.i_work_with .container .cards .card .ellipse_blue {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.i_work_with .container .cards .card h3 {
+    grid-column: 1/3;
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 5%;
+}
+
+.i_work_with .container .cards .card .list {
+    grid-column: 1/3;
+    margin-bottom: 15%;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.i_work_with .container .question {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.i_work_with .container .question a {
+    border: 2px solid #000000;
+    border-radius: 30px;
+    align-self: center;
+    padding: 3%;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media (max-width: 1500px) {
+    .i_work_with .container {
+        max-width: 800px;
+    }
+
+    .i_work_with .container h2 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    .i_work_with .container .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .i_work_with .container .cards .card h3 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .i_work_with .container .cards .card .list {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .i_work_with .container .question {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .i_work_with .container .question p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .i_work_with .container .question a {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 900px) {
+    .i_work_with .container {
+        max-width: 600px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .i_work_with .container h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .i_work_with .container .cards .card {
+        grid-template-columns: 1fr 6fr;
+        margin: 0;
+        margin-left: 5%;
+        margin-bottom: 15%;
+    }
+
+    .i_work_with .container .cards .card h3 {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 8%;
+        margin-left: 13%;
+    }
+
+    .i_work_with .container .cards .card .ellipse_blue {
+        max-width: 35px;
+        top: 0;
+    }
+
+    .i_work_with .container .cards .card .list {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .i_work_with .container .cards .question {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .i_work_with .container .cards .question p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .i_work_with .container .cards .question a {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 640px) {
+    .i_work_with .container {
+        max-width: 480px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .i_work_with .container h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .i_work_with .container .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .i_work_with .container .cards .card {
+        grid-template-columns: 1fr 5fr;
+        margin: 0;
+        margin-bottom: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .i_work_with .container .cards .card h3 {
+        margin-left: 0;
+        margin-top: 7%;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */
