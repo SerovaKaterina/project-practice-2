@@ -253,7 +253,7 @@ a {
   .section-1st-block {
     max-width: 60em;
     height: 700px;
-    background-image: url(../../assets/Images/background1300.png);
+    background-image: url(../../assets/images/background1300.png);
   }
   .presentation {
     width: 80%;
@@ -282,7 +282,7 @@ a {
   .section-1st-block {
     width: 38em;
     height: 700px;
-    background-image: url(../../assets/Images/background600.png);
+    background-image: url(../../assets/images/background600.png);
     margin-top: -25px;
   }
   .presentation {
@@ -316,7 +316,7 @@ a {
   .section-1st-block {
     width: 30em;
     height: 750px;
-    background-image: url(../../assets/Images/background600.png);
+    background-image: url(../../assets/images/background600.png);
     margin-top: -25px;
   }
   .presentation {
