@@ -763,5 +763,294 @@ a {
     margin-left: 5%;
   }
 }
+.container {
+  max-width: 90em;
+  margin: 0 auto;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+}
+
+.price-h2 {
+  text-align: center;
+  font-family: Poiret One;
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 2.9375em;
+  margin: 0;
+}
+
+.price__h3 {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.price__h4 {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.price {
+  padding-top: 1.875em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 45.75 em;
+  margin: 0 auto;
+}
+
+/*Секция online-offline*/
+.price-online,
+.price-offline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 47%;
+  height: 25%;
+  border-radius: 1.875em;
+  border: 1px solid black;
+}
+
+.headline-price {
+  justify-content: center;
+}
+
+.details {
+  height: 40%;
+}
+.details__list {
+  list-style: inside;
+}
+.details__item {
+  font-family: Montserrat;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.price-icon {
+  height: 25%;
+}
+.price-icon__price-icon-img {
+  padding: 0.625em;
+  height: 3em;
+  width: 3em;
+}
+
+/*Форма записи*/
+.form-accomodation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+  gap: 1.875em;
+  padding-top: 2.5em;
+}
+
+.form-accomodation-contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 29em;
+}
+.form-accomodation-contacts__text-message {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+/*Шрифты и оформление формы*/
+[placeholder] {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+/*Оформление Input в форме*/
+.input-name,
+.input-mail,
+.input-messenger,
+.input-text-message,
+.button-send-form {
+  background-color: white;
+  border-radius: 1.875em;
+  border: 1px solid black;
+}
+
+.input-name:focus::placeholder .input-mail:focus::placeholder,
+.input-messenger:focus::placeholder,
+.input-text-message:focus::placeholder {
+  opacity: 0;
+}
+
+input.input-name:hover,
+input.input-mail:hover,
+input.input-messenger:hover,
+input.input-text-message:hover {
+  border-color: #C8E2E5;
+}
+
+/*Расположение формы и Input*/
+.input-name,
+.input-mail,
+.input-messenger {
+  padding: 0.9375em;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 100%;
+}
+
+.input-text-message {
+  width: 100%;
+  height: 12.5em;
+  margin-top: 0.625em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 1.875em;
+}
+
+.form-accomodation-contacts__send-form {
+  display: flex;
+  justify-content: center;
+}
+
+/*Стиль для Кнопки Отправить*/
+.button-send-form {
+  height: 3.125em;
+  width: 25em;
+  font-family: Monserrat;
+  font-weight: 300;
+  font-size: 1.25em;
+  color: gray;
+}
+
+.button-send-form:active {
+  background-color: #C8E2E5;
+  border: none;
+}
+
+/* Cтили для десктопа */
+@media (max-width: 1500px) {
+  .container {
+    max-width: 50em;
+  }
+  .price-h2 {
+    font-size: 2em;
+    line-height: 2.3125em;
+    margin-bottom: 0;
+  }
+  .price__h3 {
+    font-size: 1.25em;
+    line-height: 1.875em;
+  }
+  .price-online,
+  .price-offline {
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    margin-bottom: 0.9375em;
+  }
+  .form-accomodation {
+    padding-top: 0;
+  }
+  .form-accomodation__name, .form-accomodation__mail, .form-accomodation__messenger {
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    border: 1px solid red;
+  }
+  .form-accomodation .form-accomodation-contacts__text-message {
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+  }
+  .details__item {
+    font-family: Montserrat;
+    font-size: 1.125em;
+    font-weight: 300;
+  }
+}
+/* Cтили для ноутбука */
+@media (max-width: 900px) {
+  .container {
+    max-width: 37.5em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+  .price-h2 {
+    font-family: Poiret One;
+    font-weight: 300;
+    font-size: 1.7em;
+    line-height: 2.3125em;
+  }
+  .price__h3 {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 0.875em;
+    line-height: 2.1875em;
+  }
+  .details__item {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 0.9375em;
+    line-height: 1em;
+  }
+  [placeholder] {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1em;
+  }
+  .button-send-form {
+    width: 50%;
+    height: 2em;
+  }
+}
+/* Cтили для планшета */
+@media (max-width: 640px) {
+  .container {
+    max-width: 30em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .price-h2 {
+    font-size: 1.4em;
+    line-height: 1.8em;
+    text-align: center;
+  }
+  .price__h3 {
+    font-size: 1.125em;
+    line-height: 2.1875em;
+    text-align: center;
+  }
+  .accomodation {
+    width: 75%;
+    text-align: center;
+    padding-left: 3.5em;
+  }
+  .form-accomodation {
+    gap: 1em;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
