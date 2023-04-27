@@ -387,7 +387,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         font-family: "Montserrat";
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
 
         h2 {
@@ -420,7 +420,7 @@
                 h3 {
                     grid-column: 1/3;
                     margin-top: 5%;
-                    font-weight: 400;
+                    font-weight: 600;
                     font-size: 20px;
                     line-height: 24px;
                     margin-left: 5%;
@@ -456,7 +456,7 @@
                 padding: 3%;
                 text-decoration: none;
                 color: #000000;
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 20px;
                 line-height: 24px;
 
@@ -612,7 +612,7 @@
 
 @mixin fonti {
     font-family: 'Poiret One', cursive;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3em;
 }
 #feedbacks {
@@ -1141,3 +1141,181 @@ width: 100%;
              }
                 }
 // Окончание Стилей для Блока Стоимость (Анна Крючкова)
+// Начало блока Адреса и контакты
+.contacts-block {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-rows: 47px 112px 112px 112px;
+  grid-template-columns: 63px 600px 708px;
+  gap: 25px;
+  &__title {
+    max-width: 100%;
+    padding-top: 100px;
+    font-family: "Poiret One", cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0%;
+    grid-area: 1/1/2/4;
+    text-align: center;
+  }
+  &__icon-1 {
+    margin-top: 3px;
+    grid-area: 2/1/3/2;
+  }
+  &__icon-2 {
+    margin: 0%;
+    grid-area: 3/1/4/2;
+  }
+  &__icon-3 {
+    margin: 0%;
+    grid-area: 4/1/5/2;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  &__social-media-1 {
+    height: 64px;
+    margin: 0%;
+    grid-area: 2/2/3/3;
+  }
+  &__social-media-2 {
+    margin: 0%;
+    grid-area: 3/2/4/3;
+  }
+  &__social-media-3 {
+    margin: 0%;
+    grid-area: 4/2/5/3;
+  }
+  &__map {
+    width: 708px;
+    height: 334px;
+    grid-area: 2/3/5/4;
+  }
+  #map {
+    border-radius: 30px;
+  }
+  &__text {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0%;
+  }
+  &__link {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration-line: underline;
+  }
+}
+/* здесь стили для десктопа (компьютер) */
+@media (max-width: 1500px) {
+  .contacts-block {
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 5% 20% 20% 20% 35%;
+    grid-template-columns: 5% 95%;
+    column-gap: 40px;
+    &__title {
+      font-size: 32px;
+      grid-area: 1/1/2/3;
+    }
+    &__map {
+      width: 800px;
+      height: 400px;
+      margin: 0 auto;
+      grid-row: 5/6;
+      grid-column: 1/3;
+            }
+    &__text {
+      font-size: 20px;
+    }
+    &__link {
+      font-size: 16px;
+    }
+  }
+  /* здесь стили для ноутбука */
+}
+@media (max-width: 900px) {
+  .contacts-block {
+    max-width: 600px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-rows: 5% 20% 20% 20% 35%;
+    grid-template-columns: 5% 95%;
+        &__title {
+      font-size: 30px;
+      grid-area: 1/1/2/3;
+     }
+    &__icon-1 {
+      height: 42px;
+    }
+    &__icon-2 {
+      height: 53px;
+    }
+    &__icon-3 {
+      height: 53px;
+    }
+    &__map {
+      width: 480px;
+      height: 300px;
+      margin: 0 auto;
+      grid-row: 5/6;
+      grid-column: 1/3;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__link {
+      font-size: 14px;
+    }
+    /* здесь стили для планшета */
+  }
+}
+@media (max-width: 640px) {
+  .contacts-block {
+    max-width: 480px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: grid;
+    grid-template-rows: 5% 20% 20% 20% 35%;
+    grid-template-columns: 5% 380px;
+    &__title {
+      font-size: 30px;
+      grid-area: 1/1/2/3;
+    }
+    &__icon-1 {
+      height: 42px;
+    }
+    &__icon-2 {
+      height: 53px;
+    }
+    &__icon-3 {
+      height: 53px;
+    }
+    &__map {
+      width: 450px;
+      height: 300px;
+      margin: 0 auto;
+      grid-row: 5/6;
+      grid-column: 1/3;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__link {
+      font-size: 14px;
+    }
+  }
+  /* здесь стили для смартфона */
+}
+// Окончание блока Адреса и контакты

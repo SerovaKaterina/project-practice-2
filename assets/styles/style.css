@@ -351,7 +351,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
 .i_work_with .container h2 {
@@ -382,7 +382,7 @@ a {
 .i_work_with .container .cards .card h3 {
   grid-column: 1/3;
   margin-top: 5%;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   margin-left: 5%;
@@ -412,7 +412,7 @@ a {
   padding: 3%;
   text-decoration: none;
   color: #000000;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
 }
@@ -589,7 +589,7 @@ a {
 }
 .feedbacks-text__h2 {
   font-family: "Poiret One", cursive;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 3em;
 }
 @media (max-width: 1500px) {
@@ -1061,6 +1061,183 @@ input.input-text-message:hover {
   .form-accomodation {
     gap: 1em;
   }
+}
+.contacts-block {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-rows: 47px 112px 112px 112px;
+  grid-template-columns: 63px 600px 708px;
+  gap: 25px;
+}
+.contacts-block__title {
+  max-width: 100%;
+  padding-top: 100px;
+  font-family: "Poiret One", cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0%;
+  grid-area: 1/1/2/4;
+  text-align: center;
+}
+.contacts-block__icon-1 {
+  margin-top: 3px;
+  grid-area: 2/1/3/2;
+}
+.contacts-block__icon-2 {
+  margin: 0%;
+  grid-area: 3/1/4/2;
+}
+.contacts-block__icon-3 {
+  margin: 0%;
+  grid-area: 4/1/5/2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contacts-block__social-media-1 {
+  height: 64px;
+  margin: 0%;
+  grid-area: 2/2/3/3;
+}
+.contacts-block__social-media-2 {
+  margin: 0%;
+  grid-area: 3/2/4/3;
+}
+.contacts-block__social-media-3 {
+  margin: 0%;
+  grid-area: 4/2/5/3;
+}
+.contacts-block__map {
+  width: 708px;
+  height: 334px;
+  grid-area: 2/3/5/4;
+}
+.contacts-block #map {
+  border-radius: 30px;
+}
+.contacts-block__text {
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0%;
+}
+.contacts-block__link {
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration-line: underline;
+}
+
+/* здесь стили для десктопа (компьютер) */
+@media (max-width: 1500px) {
+  .contacts-block {
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 5% 20% 20% 20% 35%;
+    grid-template-columns: 5% 95%;
+    column-gap: 40px;
+  }
+  .contacts-block__title {
+    font-size: 32px;
+    grid-area: 1/1/2/3;
+  }
+  .contacts-block__map {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    grid-row: 5/6;
+    grid-column: 1/3;
+  }
+  .contacts-block__text {
+    font-size: 20px;
+  }
+  .contacts-block__link {
+    font-size: 16px;
+  }
+  /* здесь стили для ноутбука */
+}
+@media (max-width: 900px) {
+  .contacts-block {
+    max-width: 600px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-rows: 5% 20% 20% 20% 35%;
+    grid-template-columns: 5% 95%;
+    /* здесь стили для планшета */
+  }
+  .contacts-block__title {
+    font-size: 30px;
+    grid-area: 1/1/2/3;
+  }
+  .contacts-block__icon-1 {
+    height: 42px;
+  }
+  .contacts-block__icon-2 {
+    height: 53px;
+  }
+  .contacts-block__icon-3 {
+    height: 53px;
+  }
+  .contacts-block__map {
+    width: 480px;
+    height: 300px;
+    margin: 0 auto;
+    grid-row: 5/6;
+    grid-column: 1/3;
+  }
+  .contacts-block__text {
+    font-size: 18px;
+  }
+  .contacts-block__link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 640px) {
+  .contacts-block {
+    max-width: 480px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: grid;
+    grid-template-rows: 5% 20% 20% 20% 35%;
+    grid-template-columns: 5% 380px;
+  }
+  .contacts-block__title {
+    font-size: 30px;
+    grid-area: 1/1/2/3;
+  }
+  .contacts-block__icon-1 {
+    height: 42px;
+  }
+  .contacts-block__icon-2 {
+    height: 53px;
+  }
+  .contacts-block__icon-3 {
+    height: 53px;
+  }
+  .contacts-block__map {
+    width: 450px;
+    height: 300px;
+    margin: 0 auto;
+    grid-row: 5/6;
+    grid-column: 1/3;
+  }
+  .contacts-block__text {
+    font-size: 18px;
+  }
+  .contacts-block__link {
+    font-size: 14px;
+  }
+  /* здесь стили для смартфона */
 }
 
 /*# sourceMappingURL=style.css.map */
