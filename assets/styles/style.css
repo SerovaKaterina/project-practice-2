@@ -974,21 +974,31 @@ input.input-text-message:hover {
   .form-accomodation {
     padding-top: 0;
   }
-  .form-accomodation__name, .form-accomodation__mail, .form-accomodation__messenger {
+  .form-accomodation-contacts {
+    padding-top: 0;
+  }
+  .form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
     width: 100%;
     height: 25%;
     justify-content: center;
-    border: 1px solid red;
+    padding-bottom: 0.5em;
   }
-  .form-accomodation .form-accomodation-contacts__text-message {
+  .form-accomodation-contacts__text-message {
     width: 100%;
     height: 25%;
     justify-content: center;
   }
-  .details__item {
-    font-family: Montserrat;
-    font-size: 1.125em;
-    font-weight: 300;
+  .input-name,
+  .input-mail,
+  .input-messenger {
+    padding-left: 1.875em;
+    width: 100%;
+  }
+  .input-text-message {
+    width: 100%;
+    height: 12.5em;
+    margin-top: 0.625em;
+    padding-left: 1.875em;
   }
 }
 /* Cтили для ноутбука */

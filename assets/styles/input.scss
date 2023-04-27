@@ -1050,27 +1050,35 @@ margin-bottom: 0.9375em;
 }
 .form-accomodation{
     padding-top: 0;
-
+}
+.form-accomodation-contacts{
+    padding-top: 0;
 &__name,
 &__mail,
 &__messenger{
     width: 100%;
     height: 25%;
     justify-content: center;
-border: 1px solid red
+   padding-bottom: 0.5em;
+}
 }
 .form-accomodation-contacts__text-message{
     width: 100%;
     height: 25%;
     justify-content: center;
 }
+.input-name,
+.input-mail,
+.input-messenger{
+padding-left: 1.875em;
+width: 100%;
 }
-.details__item{
-    font-family: Montserrat;
-    font-size: 1.125em;
-    font-weight: 300;
-}
-}
+.input-text-message{
+    width: 100%;
+    height:12.5em;
+    margin-top: 0.625em;
+ padding-left: 1.875em;
+}}
     /* Cтили для ноутбука */
    @media (max-width: 900px) { 
     .container { 
@@ -1131,5 +1139,5 @@ border: 1px solid red
              .form-accomodation{
                 gap: 1em;
              }
-            }
+                }
 // Окончание Стилей для Блока Стоимость (Анна Крючкова)
