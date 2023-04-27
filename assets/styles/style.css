@@ -772,7 +772,7 @@ a {
 
 .price-h2 {
   text-align: center;
-  font-family: Poiret One;
+  font-family: "Poiret One";
   font-weight: 300;
   font-size: 2.5em;
   line-height: 2.9375em;
@@ -781,7 +781,7 @@ a {
 
 .price__h3 {
   text-align: center;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: 300;
   font-size: 1.25em;
   line-height: 1.5em;
@@ -791,7 +791,7 @@ a {
 
 .price__h4 {
   text-align: center;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: 300;
   font-size: 1.25em;
   margin: 0;
@@ -832,7 +832,7 @@ a {
   list-style: inside;
 }
 .details__item {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 1.25em;
   font-weight: 300;
 }
@@ -882,7 +882,7 @@ a {
 
 /*Шрифты и оформление формы*/
 [placeholder] {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: 300;
   font-size: 1em;
 }
@@ -939,7 +939,7 @@ input.input-text-message:hover {
 .button-send-form {
   height: 3.125em;
   width: 25em;
-  font-family: Monserrat;
+  font-family: "Monserrat";
   font-weight: 300;
   font-size: 1.25em;
   color: gray;
@@ -1009,25 +1009,25 @@ input.input-text-message:hover {
     padding-right: 1.25em;
   }
   .price-h2 {
-    font-family: Poiret One;
+    font-family: "Poiret One";
     font-weight: 300;
     font-size: 1.7em;
     line-height: 2.3125em;
   }
   .price__h3 {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 300;
     font-size: 0.875em;
     line-height: 2.1875em;
   }
   .details__item {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 300;
     font-size: 0.9375em;
     line-height: 1em;
   }
   [placeholder] {
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 300;
     font-size: 1em;
   }
