@@ -1,6 +1,5 @@
 .footer {
     display: flex;
-    max-width: 1440px; 
     width: 100%; 
     background-color: #DBF0F2;
 
@@ -43,25 +42,19 @@
     }
 
    } 
-   /* здесь ваши стили для десктопа (компьютер) */
-   @media (max-width: 1500px) { 
-    .footer { 
-    max-width: 800px; 
-    } 
-    /* здесь ваши стили для ноутбука */
-   } 
+
    @media (max-width: 900px) { 
     .footer { 
-    max-width: 600px; 
+    max-width: 100%; 
     padding-left: 20px; 
-    padding-right: 20px; 
+    padding-right: 20px;
     } 
     /* здесь ваши стили для планшета */
    } 
    @media (max-width: 640px) { 
     
     .footer { 
-    max-width: 480px; 
+    max-width: 100%; 
     padding-left: 16px; 
     padding-right: 16px;
 
