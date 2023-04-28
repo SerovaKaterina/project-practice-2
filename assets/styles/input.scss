@@ -371,6 +371,99 @@ a {
 
 }
 
+/* блок ОБО МНЕ */
+.about_me {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+    .information {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-family: "Poiret One", cursive;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+        margin-top: 0;
+      }
+
+      p {
+        font-style: normal;
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 3%;
+      }
+
+      a {
+        border: 0.05em solid #111111;
+        box-shadow: 0 0.12em 1em #b8e6e9;
+        border-radius: 30px;
+        align-self: center;
+        padding: 3%;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 5em;
+        padding-right: 5em;
+      }
+    }
+
+    .photo {
+      display: flex;
+      justify-content: end;
+
+      img {
+        max-width: 70%;
+        border-radius: 30px;
+        justify-content: end;
+      }
+    }
+
+    @media (max-width: 1500px) {
+      .container {
+        max-width: 800px;
+      }
+
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        max-width: 600px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        max-width: 480px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+    }
+  }
+}
+
+/* конец блока ОБО МНЕ */
 /* блок С КАКИМИ ЗАПРОСАМИ Я РАБОТАЮ */
 
 .i_work_with {
@@ -804,68 +897,83 @@ a {
 .art__h:hover {
   color: #36bfc9;
 }
+
 /* Cтили для ноутбука */
 @media (max-width: 1500px) {
   .art {
     width: 100%;
   }
+
   .article-wrapper {
     padding-left: 150px;
     padding-right: 50px;
   }
+
   .img {
     padding-left: 50px;
     padding-right: 50px;
   }
-  
+
   .article__h2 {
     font-size: 32px;
   }
+
   .art__h {
     font-size: 20px;
   }
 }
+
 /* Cтили для планшета */
 @media (max-width: 900px) {
   .article-wrapper {
     flex-direction: column;
     padding-left: 150px;
     padding-right: 50px;
-    }
-    .article__h2 {
-      font-size: 32px;
-    }
-    .img {
-      padding-left: 50px;
-    }
+  }
+
+  .article__h2 {
+    font-size: 32px;
+  }
+
+  .img {
+    padding-left: 50px;
+  }
+
   .img__article {
     max-width: 100%;
   }
+
   .article {
     margin-bottom: 0;
   }
+
   .art__h {
-  font-size: 16px;
+    font-size: 16px;
   }
 }
+
 /* Cтили для смартфона */
 @media (max-width: 640px) {
   .article-wrapper {
     flex-direction: column;
     padding-left: 100px;
   }
+
   .art__h {
     font-size: 14px;
   }
+
   .article__h2 {
     font-size: 26px;
     padding-bottom: 0;
   }
+
   .img {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
- }
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .article {
     margin-top: 0;
   }

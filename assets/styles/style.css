@@ -340,6 +340,83 @@ a {
     padding-right: 50px;
   }
 }
+/* блок ОБО МНЕ */
+.about_me .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.about_me .container .information {
+  display: flex;
+  flex-direction: column;
+}
+.about_me .container .information h2 {
+  font-family: "Poiret One", cursive;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  margin-top: 0;
+}
+.about_me .container .information p {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 3%;
+}
+.about_me .container .information a {
+  border: 0.05em solid #111111;
+  box-shadow: 0 0.12em 1em #b8e6e9;
+  border-radius: 30px;
+  align-self: center;
+  padding: 3%;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.about_me .container .photo {
+  display: flex;
+  justify-content: end;
+}
+.about_me .container .photo img {
+  max-width: 70%;
+  border-radius: 30px;
+  justify-content: end;
+}
+@media (max-width: 1500px) {
+  .about_me .container .container {
+    max-width: 800px;
+  }
+}
+@media (max-width: 900px) {
+  .about_me .container .container {
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .about_me .container .container {
+    max-width: 480px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* конец блока ОБО МНЕ */
 /* блок С КАКИМИ ЗАПРОСАМИ Я РАБОТАЮ */
 .i_work_with .container {
   max-width: 1440px;
@@ -367,7 +444,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .i_work_with .container .cards .card {
-  background: #ffffff;
+  background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 30px;
   margin: 1%;
@@ -878,9 +955,7 @@ a {
   justify-content: space-between;
   width: 100%;
 }
-.form-accomodation-contacts__name,
-.form-accomodation-contacts__mail,
-.form-accomodation-contacts__messenger {
+.form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -922,7 +997,7 @@ input.input-name:hover,
 input.input-mail:hover,
 input.input-messenger:hover,
 input.input-text-message:hover {
-  border-color: #c8e2e5;
+  border-color: #C8E2E5;
 }
 
 /*Расположение формы и Input*/
@@ -960,7 +1035,7 @@ input.input-text-message:hover {
 }
 
 .button-send-form:active {
-  background-color: #c8e2e5;
+  background-color: #C8E2E5;
   border: none;
 }
 
@@ -991,9 +1066,7 @@ input.input-text-message:hover {
   .form-accomodation-contacts {
     padding-top: 0;
   }
-  .form-accomodation-contacts__name,
-  .form-accomodation-contacts__mail,
-  .form-accomodation-contacts__messenger {
+  .form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
     width: 100%;
     height: 25%;
     justify-content: center;
