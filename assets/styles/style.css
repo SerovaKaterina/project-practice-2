@@ -161,7 +161,7 @@ a {
 .section-1st-block {
   max-width: 120em;
   height: 44em;
-  background-image: url(../../assets/Images/Maskgroup.svg);
+  background-image: url(../../assets/images/Maskgroup.svg);
   background-repeat: no-repeat;
   font-family: "Poiret one", cursive;
   font-weight: 600;
@@ -253,7 +253,7 @@ a {
   .section-1st-block {
     max-width: 60em;
     height: 700px;
-    background-image: url(../../assets/Images/background1300.png);
+    background-image: url(../../assets/images/background1300.png);
   }
   .presentation {
     width: 80%;
@@ -282,7 +282,7 @@ a {
   .section-1st-block {
     width: 38em;
     height: 700px;
-    background-image: url(../../assets/Images/background600.png);
+    background-image: url(../../assets/images/background600.png);
     margin-top: -25px;
   }
   .presentation {
@@ -316,7 +316,7 @@ a {
   .section-1st-block {
     width: 30em;
     height: 750px;
-    background-image: url(../../assets/Images/background600.png);
+    background-image: url(../../assets/images/background600.png);
     margin-top: -25px;
   }
   .presentation {
@@ -367,7 +367,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .i_work_with .container .cards .card {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #000000;
   border-radius: 30px;
   margin: 1%;
@@ -658,11 +658,9 @@ a {
 .article-wrapper {
   display: flex;
   flex-direction: row;
-  width: 100%;
   max-width: 1300px;
   padding-left: 19%;
   padding-right: 12%;
-  padding-top: 100px;
   margin: 0 auto;
 }
 
@@ -676,7 +674,6 @@ a {
 
 .article__h2 {
   padding-bottom: 35px;
-  padding-left: 67px;
   font-family: "Poiret one", cursive;
   font-style: normal;
   font-weight: 600;
@@ -713,56 +710,69 @@ a {
   color: #36bfc9;
 }
 
-@media screen and (max-width: 1399px) {
+/* Cтили для ноутбука */
+@media (max-width: 1500px) {
   .art {
-    width: 80%;
-    padding-left: 0;
+    width: 100%;
+  }
+  .article-wrapper {
+    padding-left: 150px;
+    padding-right: 50px;
   }
   .img {
-    padding-top: 110px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-}
-@media screen and (max-width: 1199px) {
-  .art {
-    width: 70%;
-    padding-left: 5%;
-  }
-  .img {
-    padding-right: 30px;
+  .article__h2 {
+    font-size: 32px;
   }
   .art__h {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 949px) {
-  .article-wrapper {
-    padding-right: 150px;
-    padding-left: 100px;
-  }
-  .img {
-    padding-top: 60px;
-  }
-  .article {
-    margin-right: 10%;
-    margin-left: 0;
-  }
-  .article__h2 {
-    font-size: 24px;
-    padding-left: 25%;
-  }
-}
-@media screen and (max-width: 859px) {
+/* Cтили для планшета */
+@media (max-width: 900px) {
   .article-wrapper {
     flex-direction: column;
-  }
-  .img__article {
-    max-width: 70%;
+    padding-left: 150px;
+    padding-right: 50px;
   }
   .article__h2 {
+    font-size: 32px;
+  }
+  .img {
+    padding-left: 50px;
+  }
+  .img__article {
+    max-width: 100%;
+  }
+  .article {
+    margin-bottom: 0;
+  }
+  .art__h {
+    font-size: 16px;
+  }
+}
+/* Cтили для смартфона */
+@media (max-width: 640px) {
+  .article-wrapper {
+    flex-direction: column;
+    padding-left: 100px;
+  }
+  .art__h {
+    font-size: 14px;
+  }
+  .article__h2 {
+    font-size: 26px;
     padding-bottom: 0;
   }
   .img {
-    margin-left: 5%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .article {
+    margin-top: 0;
   }
 }
 .container {
@@ -868,7 +878,9 @@ a {
   justify-content: space-between;
   width: 100%;
 }
-.form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
+.form-accomodation-contacts__name,
+.form-accomodation-contacts__mail,
+.form-accomodation-contacts__messenger {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -910,7 +922,7 @@ input.input-name:hover,
 input.input-mail:hover,
 input.input-messenger:hover,
 input.input-text-message:hover {
-  border-color: #C8E2E5;
+  border-color: #c8e2e5;
 }
 
 /*Расположение формы и Input*/
@@ -948,11 +960,11 @@ input.input-text-message:hover {
 }
 
 .button-send-form:active {
-  background-color: #C8E2E5;
+  background-color: #c8e2e5;
   border: none;
 }
 
-/* Cтили для десктопа */
+/* Cтили для ноутбука */
 @media (max-width: 1500px) {
   .container {
     max-width: 50em;
@@ -979,7 +991,9 @@ input.input-text-message:hover {
   .form-accomodation-contacts {
     padding-top: 0;
   }
-  .form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
+  .form-accomodation-contacts__name,
+  .form-accomodation-contacts__mail,
+  .form-accomodation-contacts__messenger {
     width: 100%;
     height: 25%;
     justify-content: center;
@@ -1003,7 +1017,7 @@ input.input-text-message:hover {
     padding-left: 1.875em;
   }
 }
-/* Cтили для ноутбука */
+/* Cтили для планшета */
 @media (max-width: 900px) {
   .container {
     max-width: 37.5em;
@@ -1038,7 +1052,7 @@ input.input-text-message:hover {
     height: 2em;
   }
 }
-/* Cтили для планшета */
+/* Cтили для смартфона */
 @media (max-width: 640px) {
   .container {
     max-width: 30em;
@@ -1068,6 +1082,7 @@ input.input-text-message:hover {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
   padding-left: 30px;
   padding-right: 30px;
   display: grid;
@@ -1077,7 +1092,6 @@ input.input-text-message:hover {
 }
 .contacts-block__title {
   max-width: 100%;
-  padding-top: 100px;
   font-family: "Poiret one", cursive;
   font-style: normal;
   font-weight: 600;

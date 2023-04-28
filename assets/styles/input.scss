@@ -161,7 +161,7 @@ a {
 .section-1st-block {
   max-width: 120em;
   height: 44em;
-  background-image: url(../../assets/Images/Maskgroup.svg);
+  background-image: url(../../assets/images/Maskgroup.svg);
   background-repeat: no-repeat;
   font-family: "Poiret one", cursive;
   font-weight: 600;
@@ -260,7 +260,7 @@ a {
   .section-1st-block {
     max-width: 60em;
     height: 700px;
-    background-image: url(../../assets/Images/background1300.png);
+    background-image: url(../../assets/images/background1300.png);
   }
 
   .presentation {
@@ -296,7 +296,7 @@ a {
   .section-1st-block {
     width: 38em;
     height: 700px;
-    background-image: url(../../assets/Images/background600.png);
+    background-image: url(../../assets/images/background600.png);
     margin-top: -25px;
   }
 
@@ -339,7 +339,7 @@ a {
   .section-1st-block {
     width: 30em;
     height: 750px;
-    background-image: url(../../assets/Images/background600.png);
+    background-image: url(../../assets/images/background600.png);
     margin-top: -25px;
   }
 
@@ -748,11 +748,9 @@ a {
 .article-wrapper {
   display: flex;
   flex-direction: row;
-  width: 100%;
   max-width: 1300px;
   padding-left: 19%;
   padding-right: 12%;
-  padding-top: 100px;
   margin: 0 auto;
 }
 
@@ -768,7 +766,6 @@ a {
 .article {
   &__h2 {
     padding-bottom: 35px;
-    padding-left: 67px;
     font-family: "Poiret one", cursive;
     font-style: normal;
     font-weight: 600;
@@ -807,69 +804,70 @@ a {
 .art__h:hover {
   color: #36bfc9;
 }
-
-@media screen and (max-width: 1399px) {
+/* Cтили для ноутбука */
+@media (max-width: 1500px) {
   .art {
-    width: 80%;
-    padding-left: 0;
+    width: 100%;
   }
-
-  .img {
-    padding-top: 110px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .art {
-    width: 70%;
-    padding-left: 5%;
-  }
-
-  .img {
-    padding-right: 30px;
-  }
-
-  .art__h {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 949px) {
   .article-wrapper {
-    padding-right: 150px;
-    padding-left: 100px;
+    padding-left: 150px;
+    padding-right: 50px;
   }
-
   .img {
-    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-
-  .article {
-    margin-right: 10%;
-    margin-left: 0;
-  }
-
+  
   .article__h2 {
-    font-size: 24px;
-    padding-left: 25%;
+    font-size: 32px;
+  }
+  .art__h {
+    font-size: 20px;
   }
 }
-
-@media screen and (max-width: 859px) {
+/* Cтили для планшета */
+@media (max-width: 900px) {
   .article-wrapper {
     flex-direction: column;
-  }
-
+    padding-left: 150px;
+    padding-right: 50px;
+    }
+    .article__h2 {
+      font-size: 32px;
+    }
+    .img {
+      padding-left: 50px;
+    }
   .img__article {
-    max-width: 70%;
+    max-width: 100%;
   }
-
+  .article {
+    margin-bottom: 0;
+  }
+  .art__h {
+  font-size: 16px;
+  }
+}
+/* Cтили для смартфона */
+@media (max-width: 640px) {
+  .article-wrapper {
+    flex-direction: column;
+    padding-left: 100px;
+  }
+  .art__h {
+    font-size: 14px;
+  }
   .article__h2 {
+    font-size: 26px;
     padding-bottom: 0;
   }
-
   .img {
-    margin-left: 5%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+ }
+  .article {
+    margin-top: 0;
   }
 }
 
@@ -1072,7 +1070,7 @@ input.input-text-message:hover {
 }
 
 
-/* Cтили для десктопа */
+/* Cтили для ноутбука */
 @media (max-width: 1500px) {
   .container {
     max-width: 50em;
@@ -1135,7 +1133,7 @@ input.input-text-message:hover {
   }
 }
 
-/* Cтили для ноутбука */
+/* Cтили для планшета */
 @media (max-width: 900px) {
   .container {
     max-width: 37.5em;
@@ -1176,7 +1174,7 @@ input.input-text-message:hover {
   }
 }
 
-/* Cтили для планшета */
+/* Cтили для смартфона */
 @media (max-width: 640px) {
   .container {
     max-width: 30em;
@@ -1213,6 +1211,7 @@ input.input-text-message:hover {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
   padding-left: 30px;
   padding-right: 30px;
   display: grid;
@@ -1222,7 +1221,6 @@ input.input-text-message:hover {
 
   &__title {
     max-width: 100%;
-    padding-top: 100px;
     font-family: "Poiret one", cursive;
     font-style: normal;
     font-weight: 600;
