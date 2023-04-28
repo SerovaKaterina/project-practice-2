@@ -1,10 +1,13 @@
+/* 1й блок НАЧАЛО */
+
 .nav__header {
   max-width: 120em;
+  width: 100%;
   height: 6em;
   background-color: #cbe4e6;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  margin: 0 auto;
+
+
 }
 
 .nav-bar {
@@ -14,6 +17,8 @@
   height: 100%;
   max-width: 100em;
   margin: 0 auto;
+  padding-right: 80px;
+
 }
 
 .nav-links {
@@ -44,19 +49,15 @@ a {
   opacity: 0;
 }
 
-.hamburger-menu {
-  padding-left: 480px;
-}
-
 /* стилизуем кнопку */
 .menu__btn-header {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 40px;
+  left: 40px;
   width: 40px;
   height: 26px;
-  cursor: pointer;
   z-index: 1;
 }
 
@@ -87,11 +88,9 @@ a {
   position: fixed;
   visibility: hidden;
   top: 0;
-  right: -100%;
-  width: 25em;
-  height: 430px;
-  margin-left: -35px;
-  padding: 15px;
+  left: -100%;
+  width: 22em;
+  height: auto;
   list-style: none;
   text-align: left;
   background-color: #cde2e7;
@@ -99,11 +98,10 @@ a {
 }
 
 /* элементы меню */
-.menu__item-burg,
-.menu__item-burg-2 {
+.menu__item-burg {
   display: block;
   margin: 15px;
-  padding: 12px 24px;
+  padding: 10px 15px;
   color: #0b0b0b;
   font-family: "Poiret one", cursive;
   font-size: 1em;
@@ -160,11 +158,14 @@ a {
 
 .section-1st-block {
   max-width: 120em;
+  width: 100%;
   height: 44em;
   background-image: url(../../assets/images/Maskgroup.svg);
   background-repeat: no-repeat;
   font-family: "Poiret one", cursive;
   font-weight: 600;
+  margin: 0 auto;
+
 }
 
 /* Первый блок СОДЕРЖАНИЕ */
@@ -237,20 +238,20 @@ a {
 
 /* МЕДИАЗАПРОСЫ */
 
-@media (min-width: 1401px) {
+@media (min-width: 1501px) {
   .hamburger-menu {
     display: none;
   }
 }
 
-@media (min-width: 901px) and (max-width: 1400px) {
+@media (min-width: 901px) and (max-width: 1500px) {
 
   .hamburger-menu {
     display: none;
   }
 
   .nav__header {
-    max-width: 60em;
+    width: 100%;
   }
 
   .nav-links {
@@ -258,9 +259,10 @@ a {
   }
 
   .section-1st-block {
-    max-width: 60em;
-    height: 700px;
-    background-image: url(../../assets/images/background1300.png);
+    width: 100%;
+    height: 44em;
+    background-image: url(../../assets/images/Maskgroup.svg);
+
   }
 
   .presentation {
@@ -286,7 +288,8 @@ a {
 
 @media (min-width: 641px) and (max-width: 900px) {
   .nav__header {
-    max-width: 38em;
+    max-width: 56.25em;
+    width: 100%;
   }
 
   .nav-links {
@@ -294,9 +297,9 @@ a {
   }
 
   .section-1st-block {
-    width: 38em;
+    width: 100%;
     height: 700px;
-    background-image: url(../../assets/images/background600.png);
+    background-image: url(../../assets/images/Maskgroup.svg);
     margin-top: -25px;
   }
 
@@ -329,17 +332,17 @@ a {
   }
 
   .nav__header {
-    width: 30em;
+    width: 100%;
   }
 
-  .hamburger-menu {
-    padding-left: 350px;
+  .menu__box {
+    width: 17em;
   }
 
   .section-1st-block {
-    width: 30em;
-    height: 750px;
-    background-image: url(../../assets/images/background600.png);
+    width: 100%;
+    height: 46em;
+    background-image: url(../../assets/Images/Maskgroup.svg);
     margin-top: -25px;
   }
 
@@ -362,14 +365,62 @@ a {
   }
 
   .btn__presentation-block {
-    padding-top: -8px;
+    padding-right: 50px;
+    margin: 0 auto 30px auto;
+  }
+
+  .btn__presentation {
+    width: 11em;
+    height: 2.5em;
+  }
+
+  .presentation__quote-author {
+    padding-right: 30px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 445px) {
+  .menu__box {
+    width: 12em;
+    height: auto;
+  }
+
+  .menu__item-burg {
+    margin-left: -20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .section-1st-block {
+    margin-top: -25px;
+    height: 44em;
+
+  }
+
+  .presentation__name {
+    margin-top: -20px;
+    font-size: 60px;
+  }
+
+  .presentation__quote {
+    /* Цитата */
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  .presentation__quote-author {
+    padding-right: 30px;
+    padding-left: 15px;
+    margin-top: -30px;
   }
 
   .btn__presentation-block {
-    padding-right: 50px;
+    padding-top: -8px;
   }
-
 }
+
+/* 1й блок ОКОНЧАНИЕ */
 
 /* блок С КАКИМИ ЗАПРОСАМИ Я РАБОТАЮ */
 
@@ -804,68 +855,83 @@ a {
 .art__h:hover {
   color: #36bfc9;
 }
+
 /* Cтили для ноутбука */
 @media (max-width: 1500px) {
   .art {
     width: 100%;
   }
+
   .article-wrapper {
     padding-left: 150px;
     padding-right: 50px;
   }
+
   .img {
     padding-left: 50px;
     padding-right: 50px;
   }
-  
+
   .article__h2 {
     font-size: 32px;
   }
+
   .art__h {
     font-size: 20px;
   }
 }
+
 /* Cтили для планшета */
 @media (max-width: 900px) {
   .article-wrapper {
     flex-direction: column;
     padding-left: 150px;
     padding-right: 50px;
-    }
-    .article__h2 {
-      font-size: 32px;
-    }
-    .img {
-      padding-left: 50px;
-    }
+  }
+
+  .article__h2 {
+    font-size: 32px;
+  }
+
+  .img {
+    padding-left: 50px;
+  }
+
   .img__article {
     max-width: 100%;
   }
+
   .article {
     margin-bottom: 0;
   }
+
   .art__h {
-  font-size: 16px;
+    font-size: 16px;
   }
 }
+
 /* Cтили для смартфона */
 @media (max-width: 640px) {
   .article-wrapper {
     flex-direction: column;
     padding-left: 100px;
   }
+
   .art__h {
     font-size: 14px;
   }
+
   .article__h2 {
     font-size: 26px;
     padding-bottom: 0;
   }
+
   .img {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
- }
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .article {
     margin-top: 0;
   }
