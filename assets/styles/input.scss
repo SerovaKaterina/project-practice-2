@@ -105,7 +105,7 @@ a {
   margin: 15px;
   padding: 12px 24px;
   color: #0b0b0b;
-  font-family: 'Poiret One', sans-serif;
+  font-family: 'Poiret One', "Open Sans", sans-serif;
   font-size: 1em;
   font-weight: 700;
   text-decoration: none;
@@ -161,9 +161,9 @@ a {
 .section-1st-block {
   max-width: 120em;
   height: 44em;
-  background-image: url(/assets/Images/Maskgroup.svg);
+  background-image: url(../../assets/Images/Maskgroup.svg);
   background-repeat: no-repeat;
-  font-family: 'Poiret One';
+  font-family: 'Poiret One', "Open Sans", sans-serif;
   font-weight: 600;
 }
 
@@ -231,7 +231,7 @@ a {
   width: 14em;
   color: #1a1b1c;
   font-size: 1.5em;
-  font-family: 'Poiret One';
+  font-family: 'Poiret One', "Open Sans", sans-serif;
   font-weight: 600;
 }
 
@@ -260,7 +260,7 @@ a {
   .section-1st-block {
     max-width: 60em;
     height: 700px;
-    background-image: url(/assets/Images/background1300.png);
+    background-image: url(../../assets/Images/background1300.png);
   }
 
   .presentation {
@@ -296,7 +296,7 @@ a {
   .section-1st-block {
     width: 38em;
     height: 700px;
-    background-image: url(/assets/Images/background600.png);
+    background-image: url(../../assets/Images/background600.png);
     margin-top: -25px;
   }
 
@@ -339,7 +339,7 @@ a {
   .section-1st-block {
     width: 30em;
     height: 750px;
-    background-image: url(/assets/Images/background600.png);
+    background-image: url(../../assets/Images/background600.png);
     margin-top: -25px;
   }
 
@@ -392,6 +392,7 @@ a {
     h2 {
       grid-column: 1 / 4;
       font-family: 'Poiret One', "Open Sans", sans-serif;
+      font-weight: 600;
       font-size: 40px;
       line-height: 47px;
     }
@@ -603,4 +604,902 @@ a {
 
   }
 
+}
+
+/** Отзывы **/
+@mixin arrow-size {
+  width: 30px;
+  height: 20px;
+}
+
+@mixin fonti {
+  font-family: 'Poiret One', "Open Sans", cursive;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+#feedbacks {
+  display: none;
+}
+
+.feedbacks {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (max-width: 1500px) {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../images/arrow-left.svg);
+  @include arrow-size;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/arrow-right.svg);
+  @include arrow-size;
+}
+
+.carousel-control-prev {
+  left: -150px;
+
+  @media (max-width: 1500px) {
+    left: -100px;
+  }
+}
+
+.carousel-control-next {
+  right: -150px;
+
+  @media (max-width: 1500px) {
+    right: -100px;
+  }
+}
+
+.carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.feedbacks-text {
+  margin-bottom: 1.4em;
+  margin: 0 auto;
+  width: 6em;
+
+  &__h2 {
+    @include fonti;
+
+    @media (max-width: 1500px) {
+      font-size: 2em;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 1.5em;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.feedbacks-tablet {
+  @media (min-width: 900px) {
+    display: none;
+  }
+
+  @media (max-width: 639px) {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .carousel-control-next {
+      right: -3.5em;
+    }
+
+    .carousel-control-prev {
+      left: -3.5em;
+    }
+  }
+}
+
+.feedbacks-phone {
+  @media (min-width: 640px) {
+    display: none;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .carousel-control-next {
+    right: -3em;
+  }
+
+  .carousel-control-prev {
+    left: -3em;
+  }
+}
+
+
+// Начало стилей 5 блока Катя
+.article-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1300px;
+  padding-left: 19%;
+  padding-right: 12%;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.img {
+  padding-top: 40px;
+  padding-right: 86px;
+
+  &__article {
+    border-radius: 30px;
+  }
+}
+
+.article {
+  &__h2 {
+    padding-bottom: 35px;
+    padding-left: 67px;
+    font-family: "Poiret One", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+
+.art {
+  padding-left: 0;
+
+  &__li {
+    position: relative;
+    padding-left: 15px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-top: 1px solid;
+    line-height: 1.2;
+    transition: 0.3s linear;
+  }
+
+  &__h {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+  }
+}
+
+.art__li:hover {
+  border-color: #36bfc9;
+}
+
+.art__h:hover {
+  color: #36bfc9;
+}
+
+@media screen and (max-width: 1399px) {
+  .art {
+    width: 80%;
+    padding-left: 0;
+  }
+
+  .img {
+    padding-top: 110px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .art {
+    width: 70%;
+    padding-left: 5%;
+  }
+
+  .img {
+    padding-right: 30px;
+  }
+
+  .art__h {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 949px) {
+  .article-wrapper {
+    padding-right: 150px;
+    padding-left: 100px;
+  }
+
+  .img {
+    padding-top: 60px;
+  }
+
+  .article {
+    margin-right: 10%;
+    margin-left: 0;
+  }
+
+  .article__h2 {
+    font-size: 24px;
+    padding-left: 25%;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  .article-wrapper {
+    flex-direction: column;
+  }
+
+  .img__article {
+    max-width: 70%;
+  }
+
+  .article__h2 {
+    padding-bottom: 0;
+  }
+
+  .img {
+    margin-left: 5%;
+  }
+}
+
+// Окончание стилей 5 блока Катя
+
+// Стили Блок (Стоимость Анна Крючкова)
+.container {
+  max-width: 90em;
+  margin: 0 auto;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+}
+
+.price-h2 {
+  text-align: center;
+  font-family: 'Poiret One', "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.5em;
+  line-height: 2.9375em;
+  margin: 0;
+}
+
+.price__h3 {
+  text-align: center;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.price__h4 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.price {
+  padding-top: 1.875em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 45.75 em;
+  margin: 0 auto;
+}
+
+/*Секция online-offline*/
+.price-online,
+.price-offline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 47%;
+  height: 25%;
+  border-radius: 1.875em;
+  border: 1px solid black;
+}
+
+.headline-price {
+  justify-content: center;
+}
+
+.details {
+  height: 40%;
+
+  &__list {
+    list-style: inside;
+  }
+
+  &__item {
+    font-family: "Montserrat";
+    font-size: 1.25em;
+    font-weight: 300;
+  }
+}
+
+.price-icon {
+  height: 25%;
+
+  &__price-icon-img {
+    padding: 0.625em;
+    height: 3em;
+    width: 3em;
+  }
+}
+
+/*Форма записи*/
+.form-accomodation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+  gap: 1.875em;
+  padding-top: 2.5em;
+}
+
+.form-accomodation-contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+
+  &__name,
+  &__mail,
+  &__messenger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 29em;
+  }
+
+  &__text-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+}
+
+/*Шрифты и оформление формы*/
+[placeholder] {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1em;
+}
+
+/*Оформление Input в форме*/
+
+.input-name,
+.input-mail,
+.input-messenger,
+.input-text-message,
+.button-send-form {
+  background-color: white;
+  border-radius: 1.875em;
+  border: 1px solid black;
+}
+
+.input-name:focus::placeholder .input-mail:focus::placeholder,
+.input-messenger:focus::placeholder,
+.input-text-message:focus::placeholder {
+  opacity: 0;
+}
+
+input.input-name:hover,
+input.input-mail:hover,
+input.input-messenger:hover,
+input.input-text-message:hover {
+  border-color: #C8E2E5;
+}
+
+/*Расположение формы и Input*/
+.input-name,
+.input-mail,
+.input-messenger {
+  padding: 0.9375em;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 100%;
+}
+
+.input-text-message {
+  width: 100%;
+  height: 12.5em;
+  margin-top: 0.625em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 1.875em;
+}
+
+.form-accomodation-contacts__send-form {
+  display: flex;
+  justify-content: center;
+}
+
+/*Стиль для Кнопки Отправить*/
+.button-send-form {
+  height: 3.125em;
+  width: 25em;
+  font-family: "Monserrat";
+  font-weight: 300;
+  font-size: 1.25em;
+  color: gray;
+}
+
+.button-send-form:active {
+  background-color: #C8E2E5;
+  border: none
+}
+
+
+/* Cтили для десктопа */
+@media (max-width: 1500px) {
+  .container {
+    max-width: 50em;
+  }
+
+  .price-h2 {
+    font-size: 2em;
+    line-height: 2.3125em;
+    margin-bottom: 0;
+  }
+
+  .price__h3 {
+    font-size: 1.25em;
+    line-height: 1.875em;
+  }
+
+  .price-online,
+  .price-offline {
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    margin-bottom: 0.9375em;
+  }
+
+  .form-accomodation {
+    padding-top: 0;
+  }
+
+  .form-accomodation-contacts {
+    padding-top: 0;
+
+    &__name,
+    &__mail,
+    &__messenger {
+      width: 100%;
+      height: 25%;
+      justify-content: center;
+      padding-bottom: 0.5em;
+    }
+  }
+
+  .form-accomodation-contacts__text-message {
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+  }
+
+  .input-name,
+  .input-mail,
+  .input-messenger {
+    padding-left: 1.875em;
+    width: 100%;
+  }
+
+  .input-text-message {
+    width: 100%;
+    height: 12.5em;
+    margin-top: 0.625em;
+    padding-left: 1.875em;
+  }
+}
+
+/* Cтили для ноутбука */
+@media (max-width: 900px) {
+  .container {
+    max-width: 37.5em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+
+  .price-h2 {
+    font-family: "Poiret One";
+    font-weight: 300;
+    font-size: 1.7em;
+    line-height: 2.3125em;
+  }
+
+  .price__h3 {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 0.875em;
+    line-height: 2.1875em;
+  }
+
+  .details__item {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 0.9375em;
+    line-height: 1em;
+  }
+
+  [placeholder] {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1em;
+  }
+
+  .button-send-form {
+    width: 50%;
+    height: 2em;
+  }
+}
+
+/* Cтили для планшета */
+@media (max-width: 640px) {
+  .container {
+    max-width: 30em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .price-h2 {
+    font-size: 1.4em;
+    line-height: 1.8em;
+    text-align: center;
+  }
+
+  .price__h3 {
+    font-size: 1.125em;
+    line-height: 2.1875em;
+    text-align: center;
+  }
+
+  .accomodation {
+    width: 75%;
+    text-align: center;
+    padding-left: 3.5em;
+  }
+
+  .form-accomodation {
+    gap: 1em;
+  }
+}
+
+// Окончание Стилей для Блока Стоимость (Анна Крючкова)
+// Начало блока Адреса и контакты
+.contacts-block {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-rows: 47px 112px 112px 112px;
+  grid-template-columns: 63px 600px 708px;
+  gap: 25px;
+
+  &__title {
+    max-width: 100%;
+    padding-top: 100px;
+    font-family: "Poiret One", cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0%;
+    grid-area: 1/1/2/4;
+    text-align: center;
+  }
+
+  &__icon-1 {
+    margin-top: 3px;
+    grid-area: 2/1/3/2;
+  }
+
+  &__icon-2 {
+    margin: 0%;
+    grid-area: 3/1/4/2;
+  }
+
+  &__icon-3 {
+    margin: 0%;
+    grid-area: 4/1/5/2;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__social-media-1 {
+    height: 64px;
+    margin: 0%;
+    grid-area: 2/2/3/3;
+  }
+
+  &__social-media-2 {
+    margin: 0%;
+    grid-area: 3/2/4/3;
+  }
+
+  &__social-media-3 {
+    margin: 0%;
+    grid-area: 4/2/5/3;
+  }
+
+  &__map {
+    width: 708px;
+    height: 334px;
+    grid-area: 2/3/5/4;
+  }
+
+  #map {
+    border-radius: 30px;
+  }
+
+  &__text {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0%;
+  }
+
+  &__link {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration-line: underline;
+  }
+}
+
+/* здесь стили для десктопа (компьютер) */
+@media (max-width: 1500px) {
+  .contacts-block {
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 5% 20% 20% 20% 35%;
+    grid-template-columns: 5% 95%;
+    column-gap: 40px;
+
+    &__title {
+      font-size: 32px;
+      grid-area: 1/1/2/3;
+    }
+
+    &__map {
+      width: 800px;
+      height: 400px;
+      margin: 0 auto;
+      grid-row: 5/6;
+      grid-column: 1/3;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+
+    &__link {
+      font-size: 16px;
+    }
+  }
+
+  /* здесь стили для ноутбука */
+}
+
+@media (max-width: 900px) {
+  .contacts-block {
+    max-width: 600px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-rows: 5% 20% 20% 20% 35%;
+    grid-template-columns: 5% 95%;
+
+    &__title {
+      font-size: 30px;
+      grid-area: 1/1/2/3;
+    }
+
+    &__icon-1 {
+      height: 42px;
+    }
+
+    &__icon-2 {
+      height: 53px;
+    }
+
+    &__icon-3 {
+      height: 53px;
+    }
+
+    &__map {
+      width: 480px;
+      height: 300px;
+      margin: 0 auto;
+      grid-row: 5/6;
+      grid-column: 1/3;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+
+    /* здесь стили для планшета */
+  }
+}
+
+@media (max-width: 640px) {
+  .contacts-block {
+    max-width: 480px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: grid;
+    grid-template-rows: 5% 20% 20% 20% 35%;
+    grid-template-columns: 5% 380px;
+
+    &__title {
+      font-size: 30px;
+      grid-area: 1/1/2/3;
+    }
+
+    &__icon-1 {
+      height: 42px;
+    }
+
+    &__icon-2 {
+      height: 53px;
+    }
+
+    &__icon-3 {
+      height: 53px;
+    }
+
+    &__map {
+      width: 450px;
+      height: 300px;
+      margin: 0 auto;
+      grid-row: 5/6;
+      grid-column: 1/3;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+
+  /* здесь стили для смартфона */
+}
+
+// Окончание блока Адреса и контакты
+
+// Начало Footer
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #cbe4e6;
+}
+
+.footer__menu-items {
+  list-style-type: none;
+}
+
+.footer__menu-item {
+  font-family: "Montserrat", Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  text-decoration: none;
+  color: black;
+  margin-top: 0.8em;
+}
+
+.footer__menu-items2 {
+  margin-top: 1em;
+  margin-left: 2.5em;
+}
+
+.footer__menu-item-img1 {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.footer__menu-item-img2 {
+  width: 1.8em;
+  height: 1.8em;
+  margin-left: 2em;
+}
+
+.footer__menu-info {
+  font-family: "Montserrat", Times, serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 19.5px;
+  margin-left: 3.8em;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* здесь ваши стили для планшета */
+}
+
+@media (max-width: 640px) {
+  .footer {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer__menu-item {
+    font-family: "Montserrat", Times, serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 19.5px;
+    text-decoration: none;
+    color: black;
+    margin-top: 0.8em;
+  }
+
+  .footer__menu-info {
+    font-family: "Montserrat", Times, serif;
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 19.5px;
+    margin-left: 3.8em;
+  }
 }
