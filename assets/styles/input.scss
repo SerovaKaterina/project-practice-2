@@ -869,6 +869,16 @@ a {
     margin-top: 0;
   }
 }
+@media (max-width: 500px) {
+.article-wrapper {
+  flex-direction: column;
+  width: 80%;
+  padding-left: 50px;
+}
+.art__h {
+  font-size: 18px;
+}
+}
 
 // Окончание стилей 5 блока Катя
 
