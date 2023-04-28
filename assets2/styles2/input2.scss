@@ -238,8 +238,9 @@
     padding-bottom: 50px;
   }
   .article1__container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .article1__h1 {
     font-family: "Poiret One";
@@ -248,23 +249,24 @@
     text-align: center;
     margin-bottom: 40px;
   }
-  .img1 {
-    padding-left: 30%;
-    margin-bottom: 20px;
+  .article1__img {
     padding-right: 30px;
+    
+    
+    
   }
   .article1__container_text {
-    max-width: 900px;
+    max-width: 800px;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
-    margin-left: 30px;
-    padding-left: 20px;
+    
+  
   }
   .primary {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bolder;
   }
   .text5 {
