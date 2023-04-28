@@ -1,11 +1,11 @@
 @charset "UTF-8";
+/* 1й блок НАЧАЛО */
 .nav__header {
   max-width: 120em;
+  width: 100%;
   height: 6em;
   background-color: #cbe4e6;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  margin: 0 auto;
 }
 
 .nav-bar {
@@ -15,6 +15,7 @@
   height: 100%;
   max-width: 100em;
   margin: 0 auto;
+  padding-right: 80px;
 }
 
 .nav-links {
@@ -45,19 +46,15 @@ a {
   opacity: 0;
 }
 
-.hamburger-menu {
-  padding-left: 480px;
-}
-
 /* стилизуем кнопку */
 .menu__btn-header {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 40px;
+  left: 40px;
   width: 40px;
   height: 26px;
-  cursor: pointer;
   z-index: 1;
 }
 
@@ -88,11 +85,9 @@ a {
   position: fixed;
   visibility: hidden;
   top: 0;
-  right: -100%;
-  width: 25em;
-  height: 430px;
-  margin-left: -35px;
-  padding: 15px;
+  left: -100%;
+  width: 22em;
+  height: auto;
   list-style: none;
   text-align: left;
   background-color: #cde2e7;
@@ -100,11 +95,10 @@ a {
 }
 
 /* элементы меню */
-.menu__item-burg,
-.menu__item-burg-2 {
+.menu__item-burg {
   display: block;
   margin: 15px;
-  padding: 12px 24px;
+  padding: 10px 15px;
   color: #0b0b0b;
   font-family: "Poiret one", cursive;
   font-size: 1em;
@@ -160,11 +154,13 @@ a {
 /* меню бургер ОКОНЧАНИЕ */
 .section-1st-block {
   max-width: 120em;
+  width: 100%;
   height: 44em;
   background-image: url(../../assets/images/Maskgroup.svg);
   background-repeat: no-repeat;
   font-family: "Poiret one", cursive;
   font-weight: 600;
+  margin: 0 auto;
 }
 
 /* Первый блок СОДЕРЖАНИЕ */
@@ -235,25 +231,25 @@ a {
 }
 
 /* МЕДИАЗАПРОСЫ */
-@media (min-width: 1401px) {
+@media (min-width: 1501px) {
   .hamburger-menu {
     display: none;
   }
 }
-@media (min-width: 901px) and (max-width: 1400px) {
+@media (min-width: 901px) and (max-width: 1500px) {
   .hamburger-menu {
     display: none;
   }
   .nav__header {
-    max-width: 60em;
+    width: 100%;
   }
   .nav-links {
     font-size: 24px;
   }
   .section-1st-block {
-    max-width: 60em;
-    height: 700px;
-    background-image: url(../../assets/images/background1300.png);
+    width: 100%;
+    height: 44em;
+    background-image: url(../../assets/images/Maskgroup.svg);
   }
   .presentation {
     width: 80%;
@@ -274,15 +270,16 @@ a {
 }
 @media (min-width: 641px) and (max-width: 900px) {
   .nav__header {
-    max-width: 38em;
+    max-width: 56.25em;
+    width: 100%;
   }
   .nav-links {
     display: none;
   }
   .section-1st-block {
-    width: 38em;
+    width: 100%;
     height: 700px;
-    background-image: url(../../assets/images/background600.png);
+    background-image: url(../../assets/images/Maskgroup.svg);
     margin-top: -25px;
   }
   .presentation {
@@ -308,15 +305,15 @@ a {
     display: none;
   }
   .nav__header {
-    width: 30em;
+    width: 100%;
   }
-  .hamburger-menu {
-    padding-left: 350px;
+  .menu__box {
+    width: 17em;
   }
   .section-1st-block {
-    width: 30em;
-    height: 750px;
-    background-image: url(../../assets/images/background600.png);
+    width: 100%;
+    height: 46em;
+    background-image: url(../../assets/Images/Maskgroup.svg);
     margin-top: -25px;
   }
   .presentation {
@@ -334,12 +331,51 @@ a {
     margin-left: 0;
   }
   .btn__presentation-block {
-    padding-top: -8px;
-  }
-  .btn__presentation-block {
     padding-right: 50px;
+    margin: 0 auto 30px auto;
+  }
+  .btn__presentation {
+    width: 11em;
+    height: 2.5em;
+  }
+  .presentation__quote-author {
+    padding-right: 30px;
+    padding-left: 15px;
   }
 }
+@media (max-width: 445px) {
+  .menu__box {
+    width: 12em;
+    height: auto;
+  }
+  .menu__item-burg {
+    margin-left: -20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .section-1st-block {
+    margin-top: -25px;
+    height: 44em;
+  }
+  .presentation__name {
+    margin-top: -20px;
+    font-size: 60px;
+  }
+  .presentation__quote {
+    /* Цитата */
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  .presentation__quote-author {
+    padding-right: 30px;
+    padding-left: 15px;
+    margin-top: -30px;
+  }
+  .btn__presentation-block {
+    padding-top: -8px;
+  }
+}
+/* 1й блок ОКОНЧАНИЕ */
 /* блок С КАКИМИ ЗАПРОСАМИ Я РАБОТАЮ */
 .i_work_with .container {
   max-width: 1440px;
