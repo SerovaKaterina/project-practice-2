@@ -24,7 +24,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 20px;
-  font-family: 'Poiret One';
+  font-family: 'Poiret One', "Open Sans", sans-serif;
   color: rgb(0, 0, 0);
 }
 
@@ -613,7 +613,7 @@ a {
 }
 
 @mixin fonti {
-  font-family: 'Poiret One', "Open Sans", cursive;
+  font-family: 'Poiret One', "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 3em;
 }
@@ -886,7 +886,7 @@ a {
 .price-h2 {
   text-align: center;
   font-family: 'Poiret One', "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 2.5em;
   line-height: 2.9375em;
   margin: 0;
@@ -895,7 +895,7 @@ a {
 .price__h3 {
   text-align: center;
   font-family: "Montserrat", "Open Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.25em;
   line-height: 1.5em;
   margin: 0;
@@ -904,7 +904,7 @@ a {
 
 .price__h4 {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.25em;
   margin: 0;
@@ -946,7 +946,7 @@ a {
   }
 
   &__item {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-size: 1.25em;
     font-weight: 300;
   }
@@ -1002,7 +1002,7 @@ a {
 
 /*Шрифты и оформление формы*/
 [placeholder] {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1em;
 }
@@ -1060,7 +1060,7 @@ input.input-text-message:hover {
 .button-send-form {
   height: 3.125em;
   width: 25em;
-  font-family: "Monserrat";
+  font-family: "Monserrat", "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.25em;
   color: gray;
@@ -1144,28 +1144,28 @@ input.input-text-message:hover {
   }
 
   .price-h2 {
-    font-family: "Poiret One";
-    font-weight: 300;
+    font-family: "Poiret One", "Open Sans", sans-serif;
+    font-weight: 600;
     font-size: 1.7em;
     line-height: 2.3125em;
   }
 
   .price__h3 {
-    font-family: "Montserrat";
-    font-weight: 300;
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-weight: 400;
     font-size: 0.875em;
     line-height: 2.1875em;
   }
 
   .details__item {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 0.9375em;
     line-height: 1em;
   }
 
   [placeholder] {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 1em;
   }
@@ -1223,7 +1223,7 @@ input.input-text-message:hover {
   &__title {
     max-width: 100%;
     padding-top: 100px;
-    font-family: "Poiret One", cursive;
+    font-family: "Poiret One", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
