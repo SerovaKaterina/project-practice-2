@@ -367,7 +367,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .i_work_with .container .cards .card {
-  background: #ffffff;
+  background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 30px;
   margin: 1%;
@@ -383,7 +383,7 @@ a {
 .i_work_with .container .cards .card h3 {
   grid-column: 1/3;
   margin-top: 5%;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   margin-left: 5%;
@@ -794,7 +794,7 @@ a {
 .price__h3 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.25em;
   line-height: 1.5em;
   margin: 0;
@@ -878,9 +878,7 @@ a {
   justify-content: space-between;
   width: 100%;
 }
-.form-accomodation-contacts__name,
-.form-accomodation-contacts__mail,
-.form-accomodation-contacts__messenger {
+.form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -922,7 +920,7 @@ input.input-name:hover,
 input.input-mail:hover,
 input.input-messenger:hover,
 input.input-text-message:hover {
-  border-color: #c8e2e5;
+  border-color: #C8E2E5;
 }
 
 /*Расположение формы и Input*/
@@ -960,7 +958,7 @@ input.input-text-message:hover {
 }
 
 .button-send-form:active {
-  background-color: #c8e2e5;
+  background-color: #C8E2E5;
   border: none;
 }
 
@@ -991,9 +989,7 @@ input.input-text-message:hover {
   .form-accomodation-contacts {
     padding-top: 0;
   }
-  .form-accomodation-contacts__name,
-  .form-accomodation-contacts__mail,
-  .form-accomodation-contacts__messenger {
+  .form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
     width: 100%;
     height: 25%;
     justify-content: center;
