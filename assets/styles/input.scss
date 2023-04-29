@@ -667,19 +667,19 @@ a {
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     text-align: center;
 
     h2 {
-      grid-column: 1 / 4;
       font-family: "Poiret one", cursive;
       font-weight: 600;
       font-size: 40px;
       line-height: 47px;
+      margin-bottom: 50px;
     }
 
     .cards {
@@ -693,7 +693,6 @@ a {
         border-radius: 30px;
         margin: 1%;
         position: relative;
-        display: grid;
         margin-bottom: 10%;
 
         .ellipse_blue {
@@ -720,7 +719,7 @@ a {
           text-align: left;
           padding-left: 15%;
           padding-right: 15%;
-
+          padding-top: 40px;
         }
 
       }
@@ -918,7 +917,7 @@ a {
 }
 
 #feedbacks {
-  display: none;
+  overflow: hidden;
 }
 
 .feedbacks {
@@ -981,6 +980,7 @@ a {
 
   &__h2 {
     @include fonti;
+    margin-bottom: 50px;
 
     @media (max-width: 1500px) {
       font-size: 2em;
@@ -1304,7 +1304,7 @@ a {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 29em;
+    width: 28em;
   }
 
   &__text-message {
@@ -1458,7 +1458,15 @@ input.input-text-message:hover {
     padding-left: 1.25em;
     padding-right: 1.25em;
   }
-
+  .price-online {
+    height: 7em;
+  }
+  .price-offline {
+    height: 8em;
+  }
+  .price__headline-price {
+    height: 20%;
+  }
   .price-h2 {
     font-family: "Poiret one", cursive;
     font-weight: 600;
@@ -1477,7 +1485,7 @@ input.input-text-message:hover {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 0.9375em;
-    line-height: 1em;
+    line-height: 1.35em;
   }
 
   [placeholder] {
@@ -1485,7 +1493,6 @@ input.input-text-message:hover {
     font-weight: 300;
     font-size: 1em;
   }
-
   .button-send-form {
     width: 50%;
     height: 2em;
@@ -1508,7 +1515,7 @@ input.input-text-message:hover {
 
   .price__h3 {
     font-size: 1.125em;
-    line-height: 2.1875em;
+    line-height: 1.5em;
     text-align: center;
   }
 
@@ -1522,14 +1529,84 @@ input.input-text-message:hover {
     gap: 1em;
   }
 }
-
+@media (max-width: 400px) {
+  .container {
+    max-width: 16em;
+    padding: 0;
+  }
+  .price-h2 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    text-align: center;
+  }
+  .price__h3,
+  .price__h4 {
+    font-size: 0.875em;
+    line-height: 1.1em;
+    text-align: center;
+    padding-bottom: 0.25em;
+    font-weight: 600;
+  }
+  .price{
+    padding-top: 0.625em;
+  }
+  .details{
+    text-align: left;
+  }
+  .details__list{
+    padding:0;
+    margin: 0;
+  }
+  .details__item {
+    font-size: 0.75em;
+    line-height: 1.25em;
+    width: 100%;
+    text-align:left;
+    font-weight: 400;
+  }
+  [placeholder] {
+    font-size: 0.75em;
+    }
+  .price-icon__price-icon-img {
+    height: 3em;
+    max-width: 2.188em;
+    width: 50%;
+    justify-content: start;
+    padding: 0.313em;
+  }
+  .price-online,
+  .price-offline {
+    width: 80%;
+    height: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0.9375em;
+    justify-content: start;
+    border-radius: 1.4em;
+    padding: 0.8em;
+  }
+  .price__headline-price,
+  .headline-price{
+    width: 75%;
+    height: 35%;
+  }
+  .accomodation{
+    padding-left: 1.563em;
+  }
+  .input-text-message{
+    margin: 0;
+  }
+  .button-send-form{
+    font-size: 0.875em;
+  }
+  }
 // Окончание Стилей для Блока Стоимость (Анна Крючкова)
 // Начало блока Адреса и контакты
 .contacts-block {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 33.2px;
+  padding-top: 98px;
   padding-bottom: 33.2px;
   padding-left: 30px;
   padding-right: 30px;
