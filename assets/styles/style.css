@@ -551,7 +551,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .i_work_with .container .cards .card {
-  background: #ffffff;
+  background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 30px;
   margin: 1%;
@@ -908,10 +908,6 @@ a {
   .art {
     width: 100%;
   }
-  .article-wrapper {
-    padding-left: 150px;
-    padding-right: 50px;
-  }
   .img {
     padding-left: 50px;
     padding-right: 50px;
@@ -927,8 +923,6 @@ a {
 @media (max-width: 900px) {
   .article-wrapper {
     flex-direction: column;
-    padding-left: 150px;
-    padding-right: 50px;
   }
   .article__h2 {
     font-size: 32px;
@@ -950,7 +944,6 @@ a {
 @media (max-width: 640px) {
   .article-wrapper {
     flex-direction: column;
-    padding-left: 100px;
   }
   .art__h {
     font-size: 14px;
@@ -971,8 +964,6 @@ a {
 @media (max-width: 500px) {
   .article-wrapper {
     flex-direction: column;
-    width: 80%;
-    padding-left: 50px;
   }
   .art__h {
     font-size: 18px;
@@ -1081,9 +1072,7 @@ a {
   justify-content: space-between;
   width: 100%;
 }
-.form-accomodation-contacts__name,
-.form-accomodation-contacts__mail,
-.form-accomodation-contacts__messenger {
+.form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1125,7 +1114,7 @@ input.input-name:hover,
 input.input-mail:hover,
 input.input-messenger:hover,
 input.input-text-message:hover {
-  border-color: #c8e2e5;
+  border-color: #C8E2E5;
 }
 
 /*Расположение формы и Input*/
@@ -1164,7 +1153,7 @@ input.input-text-message:hover {
 }
 
 .button-send-form:active {
-  background-color: #c8e2e5;
+  background-color: #C8E2E5;
   border: none;
 }
 
@@ -1195,9 +1184,7 @@ input.input-text-message:hover {
   .form-accomodation-contacts {
     padding-top: 0;
   }
-  .form-accomodation-contacts__name,
-  .form-accomodation-contacts__mail,
-  .form-accomodation-contacts__messenger {
+  .form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
     width: 100%;
     height: 25%;
     justify-content: center;
@@ -1517,27 +1504,6 @@ input.input-text-message:hover {
 @media (max-width: 640px) {
   .footer {
     width: 100%;
-  }
-}
-@media (max-width: 350px) {
-  .footer {
-    width: 100%;
-  }
-  .footer__menu-item {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 19.5px;
-    text-decoration: none;
-    color: black;
-    margin-top: 0.8em;
-  }
-  .footer__menu-info {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    font-size: 8px;
-    line-height: 19.5px;
-    margin-left: 3.8em;
   }
 }
 

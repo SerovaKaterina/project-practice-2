@@ -1080,8 +1080,7 @@ a {
   }
 
   .article-wrapper {
-    padding-left: 150px;
-    padding-right: 50px;
+    
   }
 
   .img {
@@ -1102,9 +1101,7 @@ a {
 @media (max-width: 900px) {
   .article-wrapper {
     flex-direction: column;
-    padding-left: 150px;
-    padding-right: 50px;
-  }
+   }
 
   .article__h2 {
     font-size: 32px;
@@ -1131,7 +1128,6 @@ a {
 @media (max-width: 640px) {
   .article-wrapper {
     flex-direction: column;
-    padding-left: 100px;
   }
 
   .art__h {
@@ -1157,10 +1153,7 @@ a {
 @media (max-width: 500px) {
   .article-wrapper {
     flex-direction: column;
-    width: 80%;
-    padding-left: 50px;
   }
-
   .art__h {
     font-size: 18px;
   }
