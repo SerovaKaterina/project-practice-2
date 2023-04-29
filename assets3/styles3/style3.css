@@ -238,8 +238,6 @@ a {
 @media (max-width: 900px) {
   .container {
     max-width: 600px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .education__img {
     width: 100%;
@@ -249,8 +247,6 @@ a {
 @media (max-width: 640px) {
   .container {
     max-width: 480px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
   .education {
     flex-direction: column;
@@ -332,4 +328,4 @@ a {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style3.css.map */
