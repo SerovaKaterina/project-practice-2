@@ -296,10 +296,7 @@ a {
   .presentation__profession-2 {
     margin-left: 0;
   }
-  .btn__presentation-block {
-    padding-top: -8px;
-  }
-}
+ }
 @media (max-width: 640px) {
   .nav-links {
     display: none;
@@ -345,21 +342,41 @@ a {
 }
 @media (max-width: 445px) {
   .menu__box {
-    width: 12em;
+    width: 11em;
     height: auto;
+    margin-top: 20px;
+  }
+  .menu__btn-header {
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 26px;
+    z-index: 1;
   }
   .menu__item-burg {
     margin-left: -20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 15px;
   }
   .section-1st-block {
     margin-top: -25px;
     height: 44em;
   }
+  .presentation {
+    margin-left: -5px;
+    padding-top: 30px;
+  }
+  .presentation__profession {
+    font-size: 2em;
+  }
   .presentation__name {
     margin-top: -20px;
-    font-size: 60px;
+    font-size: 50px;
   }
   .presentation__quote {
     /* Цитата */
@@ -370,9 +387,17 @@ a {
     padding-right: 30px;
     padding-left: 15px;
     margin-top: -30px;
+    font-size: 1em;
   }
   .btn__presentation-block {
-    padding-top: -8px;
+    padding: 20px;
+    margin: auto;
+  }
+}
+@media (max-width: 300px) {
+  .presentation {
+    margin-left: -5px;
+    padding-top: 5px;
   }
 }
 /* 1й блок ОКОНЧАНИЕ */
