@@ -707,7 +707,8 @@ a {
     max-width: 400px;
   }
   .i_work_with .container .cards .card h3 {
-    margin-left: 35px;
+    margin-left: 45px;
+    text-align: left;
   }
 }
 
