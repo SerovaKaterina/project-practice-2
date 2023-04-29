@@ -261,7 +261,7 @@ a {
   .section-1st-block {
     width: 100%;
     height: 44em;
-    background-image: url(../../assets/images/Maskgroup.svg);
+    background-image: url(../../assets/images/background1500.png);
 
   }
 
@@ -299,7 +299,7 @@ a {
   .section-1st-block {
     width: 100%;
     height: 700px;
-    background-image: url(../../assets/images/Maskgroup.svg);
+    background-image: url(../../assets/images/background900.png);
     margin-top: -25px;
   }
 
@@ -342,7 +342,7 @@ a {
   .section-1st-block {
     width: 100%;
     height: 46em;
-    background-image: url(../../assets/Images/Maskgroup.svg);
+    background-image: url(../../assets/images/background650.png);
     margin-top: -25px;
   }
 
@@ -422,6 +422,210 @@ a {
 
 /* 1й блок ОКОНЧАНИЕ */
 
+/* блок ОБО МНЕ */
+.about_me {
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 2em;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+
+    display: flex;
+
+
+    .information {
+      min-width: 70%;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-family: "Poiret One", cursive;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+        margin-top: 0;
+      }
+
+      .text {
+        padding-right: 5%;
+
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          padding-bottom: 3%;
+        }
+
+      }
+
+
+      a {
+        border: 0.05em solid #111111;
+        box-shadow: 0 0.12em 1em #b8e6e9;
+        border-radius: 30px;
+        align-self: center;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+
+    .photo {
+
+      img {
+        max-width: 100%;
+        border-radius: 30px;
+        justify-content: end;
+      }
+    }
+  }
+
+  @media (max-width: 1500px) {
+    .container {
+      max-width: 800px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .information {
+        justify-content: space-between;
+
+        h2 {
+          font-size: 32px;
+          line-height: 37px;
+        }
+
+        .text {
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            padding-right: 2em;
+          }
+        }
+
+
+
+        a {
+          align-self: flex-start;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+
+      .photo {
+
+        img {
+          max-width: 100%;
+          border-radius: 30px;
+          justify-content: center;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 900px) {
+
+
+    .container {
+      max-width: 600px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .information {
+
+        h2 {
+          font-size: 30px;
+          line-height: 35px;
+        }
+
+        .text {
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+
+        a {
+          font-size: 16px;
+          line-height: 20px;
+          margin: 0;
+          padding: 7%;
+        }
+      }
+
+    }
+  }
+
+
+
+  @media (max-width: 640px) {
+    .container {
+      max-width: 480px;
+      padding-left: 16px;
+      padding-right: 16px;
+      grid-template-columns: 1fr;
+      justify-content: center;
+
+      .information {
+        text-align: center;
+
+        h2 {
+          font-size: 26px;
+          line-height: 30px;
+        }
+
+        .text {
+          padding-right: 0;
+          margin-left: 10%;
+          margin-right: 10%;
+
+
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            padding-right: 0;
+          }
+        }
+
+        a {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 0;
+          padding-left: 10%;
+          padding-right: 10%;
+          padding-top: 2%;
+          padding-bottom: 2%;
+          align-self: center;
+        }
+      }
+
+      .photo {
+        max-width: 70%;
+        justify-self: center;
+        margin-top: 5%;
+      }
+    }
+  }
+
+}
+
+
+/* конец блока ОБО МНЕ */
 /* блок С КАКИМИ ЗАПРОСАМИ Я РАБОТАЮ */
 
 .i_work_with {
@@ -654,6 +858,20 @@ a {
 
   }
 
+  @media (max-width: 500px) {
+    .container {
+      max-width: 400px;
+
+      .cards {
+        .card {
+          h3 {
+            margin-left: 45px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
 }
 
 /** Отзывы **/
@@ -935,15 +1153,17 @@ a {
     margin-top: 0;
   }
 }
+
 @media (max-width: 500px) {
-.article-wrapper {
-  flex-direction: column;
-  width: 80%;
-  padding-left: 50px;
-}
-.art__h {
-  font-size: 18px;
-}
+  .article-wrapper {
+    flex-direction: column;
+    width: 80%;
+    padding-left: 50px;
+  }
+
+  .art__h {
+    font-size: 18px;
+  }
 }
 
 // Окончание стилей 5 блока Катя
@@ -1090,7 +1310,7 @@ a {
   background-color: white;
   border-radius: 1.875em;
   border: 1px solid black;
-}
+  }
 
 .input-name:focus::placeholder .input-mail:focus::placeholder,
 .input-messenger:focus::placeholder,
@@ -1127,7 +1347,7 @@ input.input-text-message:hover {
 .form-accomodation-contacts__send-form {
   display: flex;
   justify-content: center;
-}
+  }
 
 /*Стиль для Кнопки Отправить*/
 .button-send-form {
@@ -1137,7 +1357,8 @@ input.input-text-message:hover {
   font-weight: 300;
   font-size: 1.25em;
   color: gray;
-}
+  box-shadow: 0 0.12em 1em #b8e6e9
+  }
 
 .button-send-form:active {
   background-color: #C8E2E5;
@@ -1286,7 +1507,7 @@ input.input-text-message:hover {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 33.2px;
   padding-left: 30px;
   padding-right: 30px;
   display: grid;
@@ -1555,21 +1776,4 @@ input.input-text-message:hover {
   }
 }
 
-  .footer__menu-item {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 19.5px;
-    text-decoration: none;
-    color: black;
-    margin-top: 0.8em;
-  }
 
-  .footer__menu-info {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    font-size: 8px;
-    line-height: 19.5px;
-    margin-left: 3.8em;
-  }
-}

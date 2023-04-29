@@ -249,7 +249,7 @@ a {
   .section-1st-block {
     width: 100%;
     height: 44em;
-    background-image: url(../../assets/images/Maskgroup.svg);
+    background-image: url(../../assets/images/background1500.png);
   }
   .presentation {
     width: 80%;
@@ -279,7 +279,7 @@ a {
   .section-1st-block {
     width: 100%;
     height: 700px;
-    background-image: url(../../assets/images/Maskgroup.svg);
+    background-image: url(../../assets/images/background900.png);
     margin-top: -25px;
   }
   .presentation {
@@ -313,7 +313,7 @@ a {
   .section-1st-block {
     width: 100%;
     height: 46em;
-    background-image: url(../../assets/Images/Maskgroup.svg);
+    background-image: url(../../assets/images/background650.png);
     margin-top: -25px;
   }
   .presentation {
@@ -376,6 +376,154 @@ a {
   }
 }
 /* 1й блок ОКОНЧАНИЕ */
+/* блок ОБО МНЕ */
+.about_me .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  display: flex;
+}
+.about_me .container .information {
+  min-width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.about_me .container .information h2 {
+  font-family: "Poiret One", cursive;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  margin-top: 0;
+}
+.about_me .container .information .text {
+  padding-right: 5%;
+}
+.about_me .container .information .text p {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 3%;
+}
+.about_me .container .information a {
+  border: 0.05em solid #111111;
+  box-shadow: 0 0.12em 1em #b8e6e9;
+  border-radius: 30px;
+  align-self: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.about_me .container .photo img {
+  max-width: 100%;
+  border-radius: 30px;
+  justify-content: end;
+}
+@media (max-width: 1500px) {
+  .about_me .container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about_me .container .information {
+    justify-content: space-between;
+  }
+  .about_me .container .information h2 {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .about_me .container .information .text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    padding-right: 2em;
+  }
+  .about_me .container .information a {
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .about_me .container .photo img {
+    max-width: 100%;
+    border-radius: 30px;
+    justify-content: center;
+  }
+}
+@media (max-width: 900px) {
+  .about_me .container {
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_me .container .information h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .about_me .container .information .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about_me .container .information a {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 7%;
+  }
+}
+@media (max-width: 640px) {
+  .about_me .container {
+    max-width: 480px;
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .about_me .container .information {
+    text-align: center;
+  }
+  .about_me .container .information h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .about_me .container .information .text {
+    padding-right: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .about_me .container .information .text p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 0;
+  }
+  .about_me .container .information a {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    align-self: center;
+  }
+  .about_me .container .photo {
+    max-width: 70%;
+    justify-self: center;
+    margin-top: 5%;
+  }
+}
+
+/* конец блока ОБО МНЕ */
 /* блок С КАКИМИ ЗАПРОСАМИ Я РАБОТАЮ */
 .i_work_with .container {
   max-width: 1440px;
@@ -403,7 +551,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .i_work_with .container .cards .card {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #000000;
   border-radius: 30px;
   margin: 1%;
@@ -552,6 +700,15 @@ a {
   .i_work_with .container .cards .card h3 {
     margin-left: 0;
     margin-top: 7%;
+  }
+}
+@media (max-width: 500px) {
+  .i_work_with .container {
+    max-width: 400px;
+  }
+  .i_work_with .container .cards .card h3 {
+    margin-left: 45px;
+    text-align: left;
   }
 }
 
@@ -924,7 +1081,9 @@ a {
   justify-content: space-between;
   width: 100%;
 }
-.form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
+.form-accomodation-contacts__name,
+.form-accomodation-contacts__mail,
+.form-accomodation-contacts__messenger {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -966,7 +1125,7 @@ input.input-name:hover,
 input.input-mail:hover,
 input.input-messenger:hover,
 input.input-text-message:hover {
-  border-color: #C8E2E5;
+  border-color: #c8e2e5;
 }
 
 /*Расположение формы и Input*/
@@ -1001,10 +1160,11 @@ input.input-text-message:hover {
   font-weight: 300;
   font-size: 1.25em;
   color: gray;
+  box-shadow: 0 0.12em 1em #b8e6e9;
 }
 
 .button-send-form:active {
-  background-color: #C8E2E5;
+  background-color: #c8e2e5;
   border: none;
 }
 
@@ -1035,7 +1195,9 @@ input.input-text-message:hover {
   .form-accomodation-contacts {
     padding-top: 0;
   }
-  .form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
+  .form-accomodation-contacts__name,
+  .form-accomodation-contacts__mail,
+  .form-accomodation-contacts__messenger {
     width: 100%;
     height: 25%;
     justify-content: center;
@@ -1124,7 +1286,7 @@ input.input-text-message:hover {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 33.2px;
   padding-left: 30px;
   padding-right: 30px;
   display: grid;
