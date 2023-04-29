@@ -544,7 +544,7 @@ a {
     .container {
       max-width: 600px;
       padding-left: 20px;
-      padding-right: 20px;
+      padding-right: 0;
 
       .information {
 
@@ -576,8 +576,8 @@ a {
   @media (max-width: 640px) {
     .container {
       max-width: 480px;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 0;
+      padding-right: 0;
       grid-template-columns: 1fr;
       justify-content: center;
 
@@ -1019,6 +1019,7 @@ a {
   max-width: 1300px;
   padding-left: 19%;
   padding-right: 12%;
+  padding-top: 70px;
   margin: 0 auto;
 }
 
@@ -1078,17 +1079,11 @@ a {
   .art {
     width: 100%;
   }
-
-  .article-wrapper {
-    
-  }
-
-  .img {
+ .img {
     padding-left: 50px;
     padding-right: 50px;
   }
-
-  .article__h2 {
+ .article__h2 {
     font-size: 32px;
   }
 
