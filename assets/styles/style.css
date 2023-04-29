@@ -345,21 +345,41 @@ a {
 }
 @media (max-width: 445px) {
   .menu__box {
-    width: 12em;
+    width: 11em;
     height: auto;
+    margin-top: 20px;
+  }
+  .menu__btn-header {
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 26px;
+    z-index: 1;
   }
   .menu__item-burg {
     margin-left: -20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 15px;
   }
   .section-1st-block {
     margin-top: -25px;
     height: 44em;
   }
+  .presentation {
+    margin-left: -5px;
+    padding-top: 30px;
+  }
+  .presentation__profession {
+    font-size: 2em;
+  }
   .presentation__name {
     margin-top: -20px;
-    font-size: 60px;
+    font-size: 50px;
   }
   .presentation__quote {
     /* Цитата */
@@ -370,9 +390,17 @@ a {
     padding-right: 30px;
     padding-left: 15px;
     margin-top: -30px;
+    font-size: 1em;
   }
   .btn__presentation-block {
-    padding-top: -8px;
+    padding: 20px;
+    margin: auto;
+  }
+}
+@media (max-width: 300px) {
+  .presentation {
+    margin-left: -5px;
+    padding-top: 5px;
   }
 }
 /* 1й блок ОКОНЧАНИЕ */
@@ -1415,40 +1443,41 @@ input.input-text-message:hover {
 @media (max-width: 640px) {
   .contacts-block {
     max-width: 480px;
-    width: 95.7%;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 95%;
+    padding-left: 5px;
+    padding-right: 5px;
     margin: 0 auto;
     display: grid;
     grid-template-rows: 5% 8% 8% 8% 52%;
-    grid-template-columns: 5% 83.7%;
-    column-gap: 7%;
+    grid-template-columns: 15% 73.7%;
+    column-gap: 6%;
   }
   .contacts-block__title {
-    font-size: 32px;
+    font-size: 1.7em;
     grid-area: 1/1/2/3;
   }
   .contacts-block__icon-1 {
-    height: 35px;
+    height: 2em;
   }
   .contacts-block__icon-2 {
-    height: 46px;
+    height: 2.875em;
   }
   .contacts-block__icon-3 {
-    height: 46px;
+    height: 2.875em;
   }
   .contacts-block__map {
-    width: 95.7%;
+    width: 95%;
     height: 300px;
+    padding-top: 20px;
     margin: 0 auto;
     grid-row: 5/6;
     grid-column: 1/3;
   }
   .contacts-block__text {
-    font-size: 18px;
+    font-size: 1.125em;
   }
   .contacts-block__link {
-    font-size: 14px;
+    font-size: 0.875em;
   }
   /* здесь стили для смартфона */
 }
