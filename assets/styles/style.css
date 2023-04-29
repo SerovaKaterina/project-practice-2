@@ -249,7 +249,7 @@ a {
   .section-1st-block {
     width: 100%;
     height: 44em;
-    background-image: url(../../assets/images/Maskgroup.svg);
+    background-image: url(../../assets/images/background1500.png);
   }
   .presentation {
     width: 80%;
@@ -279,7 +279,7 @@ a {
   .section-1st-block {
     width: 100%;
     height: 700px;
-    background-image: url(../../assets/images/Maskgroup.svg);
+    background-image: url(../../assets/images/background900.png);
     margin-top: -25px;
   }
   .presentation {
@@ -313,7 +313,7 @@ a {
   .section-1st-block {
     width: 100%;
     height: 46em;
-    background-image: url(../../assets/Images/Maskgroup.svg);
+    background-image: url(../../assets/images/background650.png);
     margin-top: -25px;
   }
   .presentation {
@@ -1158,6 +1158,7 @@ input.input-text-message:hover {
   font-weight: 300;
   font-size: 1.25em;
   color: gray;
+  box-shadow: 0 0.12em 1em #b8e6e9;
 }
 
 .button-send-form:active {
@@ -1281,7 +1282,7 @@ input.input-text-message:hover {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 33.2px;
   padding-left: 30px;
   padding-right: 30px;
   display: grid;
@@ -1501,16 +1502,12 @@ input.input-text-message:hover {
 @media (max-width: 900px) {
   .footer {
     max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   /* здесь ваши стили для планшета */
 }
 @media (max-width: 640px) {
   .footer {
     max-width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
   }
   .footer__menu-item {
     font-family: "Montserrat", sans-serif;
