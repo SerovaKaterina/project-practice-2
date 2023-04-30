@@ -272,6 +272,13 @@
         }
     }
 
+    .diplomas {
+
+      &__img:hover {
+        transform: none;
+      }
+    }
+
    }
 
    .footer {

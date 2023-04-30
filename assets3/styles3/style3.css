@@ -255,6 +255,9 @@ a {
     width: 100%;
     margin-bottom: 3em;
   }
+  .diplomas__img:hover {
+    transform: none;
+  }
 }
 .footer {
   display: flex;
