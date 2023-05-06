@@ -47,9 +47,9 @@ a {
 /* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
-  position:fixed;
-  top:5px;
-  left:15px;
+  position: fixed;
+  top: 5px;
+  left: 15px;
 }
 
 /* стилизуем кнопку */
@@ -57,7 +57,7 @@ a {
   display: flex;
   align-items: center;
   position: fixed;
-  top: 40px;
+  top: 23px;
   left: 40px;
   width: 40px;
   height: 26px;
@@ -91,20 +91,22 @@ a {
   position: fixed;
   visibility: hidden;
   top: 0;
+  margin-top: 60px;
   left: -100%;
-  width: 22em;
+  width: 80%;
   height: auto;
   list-style: none;
   text-align: left;
   background-color: #cde2e7;
   box-shadow: 1px 0px 6px #dbcec0;
+  z-index: 1;
 }
 
 /* элементы меню */
 .menu__item-burg {
   display: block;
-  margin: 15px;
-  padding: 10px 15px;
+  margin: 10px;
+  padding: 7px 15px;
   color: #0b0b0b;
   font-family: "Poiret one", cursive;
   font-size: 1em;
@@ -199,11 +201,15 @@ a {
 .presentation__quote {
   /* Цитата */
   font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .presentation__quote-author {
   /* Автор */
   font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   align-items: flex-end;
 }
 
@@ -222,21 +228,26 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0.12em 1em #b8e6e9;
+
 }
 
 /* Стили кнопки ОБЩИЕ */
 .btn {
   cursor: pointer;
-  border: 0.05em solid #111111;
+  border: 1px solid #111111;
   border-radius: 1.1em;
   background-color: transparent;
   height: 2.2em;
   width: 14em;
   color: #1a1b1c;
   font-size: 1.5em;
-  font-family: "Poiret one", cursive;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: #cce2e8;
+  transition: 0.7s;
 }
 
 /* МЕДИАЗАПРОСЫ */
@@ -338,9 +349,6 @@ a {
     width: 100%;
   }
 
-  .menu__box {
-    width: 17em;
-  }
 
   .section-1st-block {
     width: 100%;
@@ -356,7 +364,7 @@ a {
 
   .presentation__name {
     margin-top: 20px;
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .presentation__profession {
@@ -384,11 +392,23 @@ a {
   }
 }
 
+@media (max-width: 490px) {
+  .presentation__name {
+    margin-top: -10px;
+    font-size: 60px;
+  }
+
+  .presentation__profession {
+    flex-direction: column;
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 445px) {
   .menu__box {
-    width: 11em;
     height: auto;
-    margin-top: 20px;
+    margin-left: 20px;
+    width: 80%;
   }
 
   .menu__btn-header {
@@ -432,7 +452,7 @@ a {
 
   .presentation__quote {
     /* Цитата */
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 10px;
   }
 
@@ -453,6 +473,17 @@ a {
   .presentation {
     margin-left: -5px;
     padding-top: 5px;
+  }
+
+  .btn__presentation {
+    width: 11em;
+    height: 3em;
+  }
+
+  .menu__box {
+    height: auto;
+    margin-left: 10px;
+    width: 70%;
   }
 }
 
@@ -504,7 +535,6 @@ a {
 
       a {
         border: 0.05em solid #111111;
-        box-shadow: 0 0.12em 1em #b8e6e9;
         border-radius: 30px;
         align-self: center;
         text-decoration: none;
@@ -516,6 +546,12 @@ a {
         padding-right: 5rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
+
+      }
+
+      a:hover {
+        background-color: #cce2e8;
+        border: none
       }
     }
 
@@ -740,7 +776,6 @@ a {
 
       a {
         border: 0.05em solid #111111;
-        box-shadow: 0 0.12em 1em #b8e6e9;
         border-radius: 30px;
         align-self: center;
         padding: 3%;
@@ -749,8 +784,14 @@ a {
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
-
+        width: 360px;
       }
+
+      a:hover {
+        background-color: #C8E2E5;
+        border: none
+      }
+
     }
 
 
@@ -1053,8 +1094,7 @@ a {
   display: flex;
   flex-direction: row;
   max-width: 1300px;
-  padding-left: 19%;
-  padding-right: 12%;
+  padding-left: 18%;
   padding-top: 70px;
   margin: 0 auto;
 }
@@ -1112,6 +1152,9 @@ a {
 
 /* Cтили для ноутбука */
 @media (max-width: 1500px) {
+  .article-wrapper {
+    padding-right: 10%;
+  }
   .art {
     width: 100%;
   }
@@ -1383,11 +1426,11 @@ input.input-text-message:hover {
   font-family: "Monserrat", "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.25em;
-  color: gray;
-  box-shadow: 0 0.12em 1em #b8e6e9
+  color: rgb(20, 20, 20);
+
 }
 
-.button-send-form:active {
+.button-send-form:hover {
   background-color: #C8E2E5;
   border: none
 }
