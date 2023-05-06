@@ -1094,8 +1094,7 @@ a {
   display: flex;
   flex-direction: row;
   max-width: 1300px;
-  padding-left: 19%;
-  padding-right: 12%;
+  padding-left: 18%;
   padding-top: 70px;
   margin: 0 auto;
 }
@@ -1153,6 +1152,9 @@ a {
 
 /* Cтили для ноутбука */
 @media (max-width: 1500px) {
+  .article-wrapper {
+    padding-right: 10%;
+  }
   .art {
     width: 100%;
   }
