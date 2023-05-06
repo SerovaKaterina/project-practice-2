@@ -1231,12 +1231,11 @@ a {
 }
 
 .price {
-  padding-top: 1.875em;
+  padding-top: 1.1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  height: 45.75 em;
   margin: 0 auto;
 }
 
@@ -1249,12 +1248,12 @@ a {
   margin: 0 auto;
   justify-content: center;
   width: 47%;
-  height: 25%;
+  height: 35%;
   border-radius: 1.875em;
   border: 1px solid black;
 }
-
-.headline-price {
+.headline-price1,
+.headline-price2 {
   justify-content: center;
 }
 
@@ -1288,7 +1287,7 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 80%;
   gap: 1.875em;
@@ -1301,20 +1300,21 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  gap: 0.5em;
 
   &__name,
   &__mail,
   &__messenger {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 28em;
-  }
+    width: 100%;
+      }
 
   &__text-message {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     position: relative;
   }
@@ -1357,17 +1357,12 @@ input.input-text-message:hover {
 .input-mail,
 .input-messenger {
   padding: 0.9375em;
-  margin-left: 1em;
-  margin-right: 1em;
   width: 100%;
 }
 
 .input-text-message {
   width: 100%;
   height: 12.5em;
-  margin-top: 0.625em;
-  margin-left: 1em;
-  margin-right: 1em;
   padding-left: 1.875em;
 }
 
@@ -1413,7 +1408,7 @@ input.input-text-message:hover {
   .price-online,
   .price-offline {
     width: 100%;
-    height: 25%;
+    height: 35%;
     justify-content: center;
     margin-bottom: 0.9375em;
   }
@@ -1465,15 +1460,16 @@ input.input-text-message:hover {
   }
 
   .price-online {
-    height: 7em;
+    height: 9em;
   }
 
   .price-offline {
-    height: 8em;
+    height: 9em;
   }
 
-  .price__headline-price {
-    height: 20%;
+  .headline-price1,
+  .headline-price2 {
+    height: 30%;
   }
 
   .price-h2 {
@@ -1485,18 +1481,22 @@ input.input-text-message:hover {
 
   .price__h3 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.875em;
     line-height: 2.1875em;
   }
-
+  .price__h4 {
+    padding-bottom: 1em;
+  }
   .details__item {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 0.9375em;
     line-height: 1.35em;
   }
-
+  .details__list{
+    margin-bottom: 0;
+  }
   [placeholder] {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
@@ -1516,7 +1516,16 @@ input.input-text-message:hover {
     padding-left: 1em;
     padding-right: 1em;
   }
-
+  .price-online,
+  .price-offline {
+    justify-content: space-around;
+  
+  }
+  .headline-price1,
+  .headline-price2{
+    padding-top: 0.5em;
+padding-bottom: 0.5em;
+  }
   .price-h2 {
     font-size: 1.4em;
     line-height: 1.8em;
@@ -1528,17 +1537,28 @@ input.input-text-message:hover {
     line-height: 1.5em;
     text-align: center;
   }
+  .form-accomodation-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;}
 
-  .accomodation {
-    width: 75%;
-    text-align: center;
-    padding-left: 3.5em;
-  }
+    .form-accomodation-contacts__text-message {
+      width: 100%;
+      height: 25%;
+      justify-content: space-around;
+    }
 
   .form-accomodation {
     gap: 1em;
   }
+  .accomodation {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
 }
+
 
 /* Cтили для маленького экрана */
 
@@ -1546,13 +1566,14 @@ input.input-text-message:hover {
 @media (max-width: 500px) {
   .container {
     max-width: 400px;
-    padding: 0;
   }
 
   .price-h2 {
     font-size: 1.625em;
     line-height: 1.3em;
     text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
   }
 
   .price__h3,
@@ -1566,6 +1587,7 @@ input.input-text-message:hover {
 
   .price {
     padding-top: 0.625em;
+
   }
 
   .details {
@@ -1597,24 +1619,21 @@ input.input-text-message:hover {
 
   .price-online,
   .price-offline {
-    width: 80%;
+    width: 100%;
     height: 80%;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 0.9375em;
+    margin-bottom: 1.2em;
     justify-content: start;
     border-radius: 1.4em;
     padding: 0.8em;
   }
-
-
-  .price__headline-price,
-  .headline-price {
-    width: 85%;
+  
+  .headline-price1,
+  .headline-price2 {
+    width: 80%;
     height: 35%;
   }
-
-
   .accomodation {
     padding-left: 2.5em;
     padding-right: 2em;
