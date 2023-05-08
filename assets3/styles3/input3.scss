@@ -226,6 +226,7 @@
     justify-content: center;
 
     &__img {
+      width: 20%;
         margin-left: 2em;
         margin-bottom: 2em;
     }   
@@ -250,10 +251,12 @@
     .container { 
     max-width: 600px; 
     } 
+
+    .diplomas {
+      flex-wrap: wrap;}
     
     .education {
     &__img {
-      width: 100%;
       margin-bottom: 3em;
     }
    }
@@ -263,19 +266,20 @@
     .container { 
     max-width: 480px; 
     } 
-    .education {
-        flex-direction: column;
-        
-        &__img {
-          width: 100%;
-          margin-bottom: 3em;
-        }
+
+    .title {
+      font-weight: 400;
+      font-size: 25px;
     }
 
     .diplomas {
-
-      &__img:hover {
-        transform: none;
+      flex-direction: column;
+      align-content: center;
+  
+      &__img {
+        width: 20%;
+          margin-left: 2em;
+          margin-bottom: 2em;
       }
     }
 

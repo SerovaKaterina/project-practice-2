@@ -216,6 +216,7 @@ a {
   justify-content: center;
 }
 .diplomas__img {
+  width: 20%;
   margin-left: 2em;
   margin-bottom: 2em;
 }
@@ -239,8 +240,10 @@ a {
   .container {
     max-width: 600px;
   }
+  .diplomas {
+    flex-wrap: wrap;
+  }
   .education__img {
-    width: 100%;
     margin-bottom: 3em;
   }
 }
@@ -248,15 +251,18 @@ a {
   .container {
     max-width: 480px;
   }
-  .education {
+  .title {
+    font-weight: 400;
+    font-size: 25px;
+  }
+  .diplomas {
     flex-direction: column;
+    align-content: center;
   }
-  .education__img {
-    width: 100%;
-    margin-bottom: 3em;
-  }
-  .diplomas__img:hover {
-    transform: none;
+  .diplomas__img {
+    width: 20%;
+    margin-left: 2em;
+    margin-bottom: 2em;
   }
 }
 .footer {
