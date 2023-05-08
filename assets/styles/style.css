@@ -44,14 +44,17 @@ a {
 /* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
+  position: fixed;
+  top: 5px;
+  left: 15px;
 }
 
 /* стилизуем кнопку */
 .menu__btn-header {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 40px;
+  position: fixed;
+  top: 23px;
   left: 40px;
   width: 40px;
   height: 26px;
@@ -85,20 +88,22 @@ a {
   position: fixed;
   visibility: hidden;
   top: 0;
+  margin-top: 60px;
   left: -100%;
-  width: 22em;
+  width: 80%;
   height: auto;
   list-style: none;
   text-align: left;
   background-color: #cde2e7;
   box-shadow: 1px 0px 6px #dbcec0;
+  z-index: 1;
 }
 
 /* элементы меню */
 .menu__item-burg {
   display: block;
-  margin: 15px;
-  padding: 10px 15px;
+  margin: 10px;
+  padding: 7px 15px;
   color: #0b0b0b;
   font-family: "Poiret one", cursive;
   font-size: 1em;
@@ -191,11 +196,15 @@ a {
 .presentation__quote {
   /* Цитата */
   font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .presentation__quote-author {
   /* Автор */
   font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   align-items: flex-end;
 }
 
@@ -213,21 +222,25 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0.12em 1em #b8e6e9;
 }
 
 /* Стили кнопки ОБЩИЕ */
 .btn {
   cursor: pointer;
-  border: 0.05em solid #111111;
+  border: 1px solid #111111;
   border-radius: 1.1em;
   background-color: transparent;
   height: 2.2em;
   width: 14em;
   color: #1a1b1c;
   font-size: 1.5em;
-  font-family: "Poiret one", cursive;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: #cce2e8;
+  transition: 0.7s;
 }
 
 /* МЕДИАЗАПРОСЫ */
@@ -307,9 +320,6 @@ a {
   .nav__header {
     width: 100%;
   }
-  .menu__box {
-    width: 17em;
-  }
   .section-1st-block {
     width: 100%;
     height: 46em;
@@ -321,7 +331,7 @@ a {
   }
   .presentation__name {
     margin-top: 20px;
-    font-size: 60px;
+    font-size: 50px;
   }
   .presentation__profession {
     flex-direction: column;
@@ -343,36 +353,83 @@ a {
     padding-left: 15px;
   }
 }
+@media (max-width: 490px) {
+  .presentation__name {
+    margin-top: -10px;
+    font-size: 60px;
+  }
+  .presentation__profession {
+    flex-direction: column;
+    font-size: 2em;
+  }
+}
 @media (max-width: 445px) {
   .menu__box {
-    width: 12em;
     height: auto;
+    margin-left: 20px;
+    width: 80%;
+  }
+  .menu__btn-header {
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 26px;
+    z-index: 1;
   }
   .menu__item-burg {
     margin-left: -20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 15px;
   }
   .section-1st-block {
     margin-top: -25px;
     height: 44em;
   }
+  .presentation {
+    margin-left: -5px;
+    padding-top: 30px;
+  }
+  .presentation__profession {
+    font-size: 2em;
+  }
   .presentation__name {
     margin-top: -20px;
-    font-size: 60px;
+    font-size: 50px;
   }
   .presentation__quote {
     /* Цитата */
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 10px;
   }
   .presentation__quote-author {
     padding-right: 30px;
     padding-left: 15px;
     margin-top: -30px;
+    font-size: 1em;
   }
   .btn__presentation-block {
-    padding-top: -8px;
+    padding: 20px;
+    margin: auto;
+  }
+}
+@media (max-width: 300px) {
+  .presentation {
+    margin-left: -5px;
+    padding-top: 5px;
+  }
+  .btn__presentation {
+    width: 11em;
+    height: 3em;
+  }
+  .menu__box {
+    height: auto;
+    margin-left: 10px;
+    width: 70%;
   }
 }
 /* 1й блок ОКОНЧАНИЕ */
@@ -412,7 +469,6 @@ a {
 }
 .about_me .container .information a {
   border: 0.05em solid #111111;
-  box-shadow: 0 0.12em 1em #b8e6e9;
   border-radius: 30px;
   align-self: center;
   text-decoration: none;
@@ -424,6 +480,10 @@ a {
   padding-right: 5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.about_me .container .information a:hover {
+  background-color: #cce2e8;
+  border: none;
 }
 .about_me .container .photo img {
   max-width: 100%;
@@ -464,7 +524,7 @@ a {
   .about_me .container {
     max-width: 600px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 0;
   }
   .about_me .container .information h2 {
     font-size: 30px;
@@ -484,8 +544,8 @@ a {
 @media (max-width: 640px) {
   .about_me .container {
     max-width: 480px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
     grid-template-columns: 1fr;
     justify-content: center;
   }
@@ -531,19 +591,19 @@ a {
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   text-align: center;
 }
 .i_work_with .container h2 {
-  grid-column: 1/4;
   font-family: "Poiret one", cursive;
   font-weight: 600;
   font-size: 40px;
   line-height: 47px;
+  margin-bottom: 50px;
 }
 .i_work_with .container .cards {
   grid-column: 1/4;
@@ -556,7 +616,6 @@ a {
   border-radius: 30px;
   margin: 1%;
   position: relative;
-  display: grid;
   margin-bottom: 10%;
 }
 .i_work_with .container .cards .card .ellipse_blue {
@@ -581,6 +640,7 @@ a {
   text-align: left;
   padding-left: 15%;
   padding-right: 15%;
+  padding-top: 40px;
 }
 .i_work_with .container .question {
   grid-column: 1/4;
@@ -592,7 +652,6 @@ a {
 }
 .i_work_with .container .question a {
   border: 0.05em solid #111111;
-  box-shadow: 0 0.12em 1em #b8e6e9;
   border-radius: 30px;
   align-self: center;
   padding: 3%;
@@ -601,6 +660,11 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  width: 360px;
+}
+.i_work_with .container .question a:hover {
+  background-color: #C8E2E5;
+  border: none;
 }
 @media (max-width: 1500px) {
   .i_work_with .container {
@@ -715,6 +779,7 @@ a {
 /** Отзывы **/
 #feedbacks {
   display: none;
+  overflow: hidden;
 }
 
 .feedbacks {
@@ -786,6 +851,7 @@ a {
   font-family: "Poiret one", cursive;
   font-weight: 600;
   font-size: 3em;
+  margin-bottom: 50px;
 }
 @media (max-width: 1500px) {
   .feedbacks-text__h2 {
@@ -853,8 +919,7 @@ a {
   display: flex;
   flex-direction: row;
   max-width: 1300px;
-  padding-left: 19%;
-  padding-right: 12%;
+  padding-left: 18%;
   margin: 0 auto;
 }
 
@@ -906,12 +971,11 @@ a {
 
 /* Cтили для ноутбука */
 @media (max-width: 1500px) {
+  .article-wrapper {
+    padding-right: 10%;
+  }
   .art {
     width: 100%;
-  }
-  .article-wrapper {
-    padding-left: 150px;
-    padding-right: 50px;
   }
   .img {
     padding-left: 50px;
@@ -928,8 +992,6 @@ a {
 @media (max-width: 900px) {
   .article-wrapper {
     flex-direction: column;
-    padding-left: 150px;
-    padding-right: 50px;
   }
   .article__h2 {
     font-size: 32px;
@@ -951,7 +1013,6 @@ a {
 @media (max-width: 640px) {
   .article-wrapper {
     flex-direction: column;
-    padding-left: 100px;
   }
   .art__h {
     font-size: 14px;
@@ -972,8 +1033,6 @@ a {
 @media (max-width: 500px) {
   .article-wrapper {
     flex-direction: column;
-    width: 80%;
-    padding-left: 50px;
   }
   .art__h {
     font-size: 18px;
@@ -1014,12 +1073,11 @@ a {
 }
 
 .price {
-  padding-top: 1.875em;
+  padding-top: 1.1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  height: 45.75 em;
   margin: 0 auto;
 }
 
@@ -1032,12 +1090,13 @@ a {
   margin: 0 auto;
   justify-content: center;
   width: 47%;
-  height: 25%;
+  height: 35%;
   border-radius: 1.875em;
   border: 1px solid black;
 }
 
-.headline-price {
+.headline-price1,
+.headline-price2 {
   justify-content: center;
 }
 
@@ -1068,7 +1127,7 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 80%;
   gap: 1.875em;
@@ -1081,17 +1140,18 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  gap: 0.5em;
 }
 .form-accomodation-contacts__name, .form-accomodation-contacts__mail, .form-accomodation-contacts__messenger {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 29em;
+  width: 100%;
 }
 .form-accomodation-contacts__text-message {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   position: relative;
 }
@@ -1132,17 +1192,12 @@ input.input-text-message:hover {
 .input-mail,
 .input-messenger {
   padding: 0.9375em;
-  margin-left: 1em;
-  margin-right: 1em;
   width: 100%;
 }
 
 .input-text-message {
   width: 100%;
   height: 12.5em;
-  margin-top: 0.625em;
-  margin-left: 1em;
-  margin-right: 1em;
   padding-left: 1.875em;
 }
 
@@ -1158,11 +1213,10 @@ input.input-text-message:hover {
   font-family: "Monserrat", "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.25em;
-  color: gray;
-  box-shadow: 0 0.12em 1em #b8e6e9;
+  color: rgb(20, 20, 20);
 }
 
-.button-send-form:active {
+.button-send-form:hover {
   background-color: #C8E2E5;
   border: none;
 }
@@ -1184,7 +1238,7 @@ input.input-text-message:hover {
   .price-online,
   .price-offline {
     width: 100%;
-    height: 25%;
+    height: 35%;
     justify-content: center;
     margin-bottom: 0.9375em;
   }
@@ -1225,6 +1279,16 @@ input.input-text-message:hover {
     padding-left: 1.25em;
     padding-right: 1.25em;
   }
+  .price-online {
+    height: 9em;
+  }
+  .price-offline {
+    height: 9em;
+  }
+  .headline-price1,
+  .headline-price2 {
+    height: 30%;
+  }
   .price-h2 {
     font-family: "Poiret one", cursive;
     font-weight: 600;
@@ -1233,15 +1297,21 @@ input.input-text-message:hover {
   }
   .price__h3 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.875em;
     line-height: 2.1875em;
+  }
+  .price__h4 {
+    padding-bottom: 1em;
   }
   .details__item {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 0.9375em;
-    line-height: 1em;
+    line-height: 1.35em;
+  }
+  .details__list {
+    margin-bottom: 0;
   }
   [placeholder] {
     font-family: "Montserrat", sans-serif;
@@ -1260,6 +1330,15 @@ input.input-text-message:hover {
     padding-left: 1em;
     padding-right: 1em;
   }
+  .price-online,
+  .price-offline {
+    justify-content: space-around;
+  }
+  .headline-price1,
+  .headline-price2 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
   .price-h2 {
     font-size: 1.4em;
     line-height: 1.8em;
@@ -1267,23 +1346,106 @@ input.input-text-message:hover {
   }
   .price__h3 {
     font-size: 1.125em;
-    line-height: 2.1875em;
+    line-height: 1.5em;
     text-align: center;
   }
-  .accomodation {
-    width: 75%;
-    text-align: center;
-    padding-left: 3.5em;
+  .form-accomodation-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .form-accomodation-contacts__text-message {
+    width: 100%;
+    height: 25%;
+    justify-content: space-around;
   }
   .form-accomodation {
     gap: 1em;
+  }
+  .accomodation {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+/* Cтили для маленького экрана */
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+  .price-h2 {
+    font-size: 1.625em;
+    line-height: 1.3em;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+  .price__h3,
+  .price__h4 {
+    font-size: 0.875em;
+    line-height: 1.25em;
+    text-align: center;
+    padding-bottom: 0.25em;
+    font-weight: 600;
+  }
+  .price {
+    padding-top: 0.625em;
+  }
+  .details {
+    text-align: left;
+  }
+  .details__list {
+    padding: 0;
+    margin: 0;
+  }
+  .details__item {
+    font-size: 0.75em;
+    line-height: 1.25em;
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+  }
+  [placeholder] {
+    font-size: 0.75em;
+  }
+  .price-icon__price-icon-img {
+    max-width: 35px;
+    padding: 0;
+    margin: 0;
+  }
+  .price-online,
+  .price-offline {
+    width: 100%;
+    height: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1.2em;
+    justify-content: start;
+    border-radius: 1.4em;
+    padding: 0.8em;
+  }
+  .headline-price1,
+  .headline-price2 {
+    width: 80%;
+    height: 35%;
+  }
+  .accomodation {
+    padding-left: 2.5em;
+    padding-right: 2em;
+  }
+  .input-text-message {
+    margin: 0;
+  }
+  .button-send-form {
+    font-size: 0.875em;
   }
 }
 .contacts-block {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 33.2px;
+  padding-top: 98px;
   padding-bottom: 33.2px;
   padding-left: 30px;
   padding-right: 30px;
@@ -1387,7 +1549,7 @@ input.input-text-message:hover {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-top: 58px;
     display: grid;
     grid-template-rows: 5% 8% 8% 8% 52%;
     grid-template-columns: 5% 90%;
@@ -1408,7 +1570,7 @@ input.input-text-message:hover {
     height: 46px;
   }
   .contacts-block__map {
-    width: 600px;
+    width: 590px;
     height: 300px;
     margin: 0 auto;
     grid-row: 5/6;
@@ -1424,40 +1586,43 @@ input.input-text-message:hover {
 @media (max-width: 640px) {
   .contacts-block {
     max-width: 480px;
-    width: 95.7%;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 95%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 58px;
+    padding-bottom: 0;
     margin: 0 auto;
     display: grid;
     grid-template-rows: 5% 8% 8% 8% 52%;
-    grid-template-columns: 5% 83.7%;
-    column-gap: 7%;
+    grid-template-columns: 15% 73.7%;
+    column-gap: 6%;
   }
   .contacts-block__title {
-    font-size: 32px;
+    font-size: 1.7em;
     grid-area: 1/1/2/3;
   }
   .contacts-block__icon-1 {
-    height: 35px;
+    height: 2em;
   }
   .contacts-block__icon-2 {
-    height: 46px;
+    height: 2.875em;
   }
   .contacts-block__icon-3 {
-    height: 46px;
+    height: 2.875em;
   }
   .contacts-block__map {
-    width: 95.7%;
+    width: 95%;
     height: 300px;
+    padding-top: 20px;
     margin: 0 auto;
     grid-row: 5/6;
     grid-column: 1/3;
   }
   .contacts-block__text {
-    font-size: 18px;
+    font-size: 1.125em;
   }
   .contacts-block__link {
-    font-size: 14px;
+    font-size: 0.875em;
   }
   /* здесь стили для смартфона */
 }
@@ -1507,13 +1672,13 @@ input.input-text-message:hover {
 
 @media (max-width: 900px) {
   .footer {
-    max-width: 100%;
+    width: 100%;
   }
   /* здесь ваши стили для планшета */
 }
 @media (max-width: 640px) {
   .footer {
-    max-width: 100%;
+    width: 100%;
   }
   .footer__menu-item {
     font-family: "Montserrat", sans-serif;
