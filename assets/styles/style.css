@@ -1001,6 +1001,7 @@ a {
   }
   .img {
     padding-left: 50px;
+    padding-top: 0;
   }
   .img__article {
     max-width: 100%;
