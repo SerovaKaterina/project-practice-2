@@ -1370,7 +1370,9 @@ a {
     position: relative;
   }
 }
-
+.form-accomodation {
+  display: none;
+}
 /*Шрифты и оформление формы*/
 [placeholder] {
   font-family: "Montserrat", sans-serif;
