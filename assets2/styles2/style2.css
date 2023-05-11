@@ -43,14 +43,17 @@ a {
 /* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
+  position: fixed;
+  top: 5px;
+  left: 15px;
 }
 
 /* стилизуем кнопку */
 .menu__btn-header {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 40px;
+  position: fixed;
+  top: 23px;
   left: 40px;
   width: 40px;
   height: 26px;
@@ -84,20 +87,22 @@ a {
   position: fixed;
   visibility: hidden;
   top: 0;
+  margin-top: 60px;
   left: -100%;
-  width: 22em;
+  width: 80%;
   height: auto;
   list-style: none;
   text-align: left;
   background-color: #cde2e7;
   box-shadow: 1px 0px 6px #dbcec0;
+  z-index: 1;
 }
 
 /* элементы меню */
 .menu__item-burg {
   display: block;
-  margin: 15px;
-  padding: 10px 15px;
+  margin: 10px;
+  padding: 7px 15px;
   color: #0b0b0b;
   font-family: "Poiret one", cursive;
   font-size: 1em;
@@ -150,6 +155,7 @@ a {
   transition-duration: 0.25s;
 }
 
+/* меню бургер ОКОНЧАНИЕ */
 @media (min-width: 1501px) {
   .hamburger-menu {
     display: none;
@@ -182,19 +188,22 @@ a {
   .nav__header {
     width: 100%;
   }
-  .menu__box {
-    width: 17em;
-  }
 }
 @media (max-width: 445px) {
   .menu__box {
-    width: 12em;
     height: auto;
+    margin-left: 20px;
+    width: 80%;
   }
   .menu__item-burg {
     margin-left: -20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 15px;
   }
 }
 .article1 {
